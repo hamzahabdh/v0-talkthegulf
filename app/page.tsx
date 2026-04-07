@@ -16,18 +16,25 @@ export default function TalkTheGulfLanding() {
   return (
     <main className="min-h-screen bg-background px-6 py-12 md:py-20">
       <div className="mx-auto max-w-4xl">
-        {/* Logo */}
-        <p 
-          className="mb-16 text-xl font-medium"
-          style={{
-            background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 100%)",
-            WebkitBackgroundClip: "text",
-            backgroundClip: "text",
-            color: "transparent",
-          }}
-        >
-          talkthegulf
-        </p>
+        {/* Header */}
+        <nav className="mb-16 flex items-center gap-6">
+          <p 
+            className="text-xl font-medium"
+            style={{
+              background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 100%)",
+              WebkitBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            talkthegulf
+          </p>
+          <div className="flex items-center gap-4 text-xs text-muted-foreground">
+            <a href="#story" className="hover:text-foreground transition-colors">story</a>
+            <a href="#tips" className="hover:text-foreground transition-colors">tips</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">twitter</a>
+          </div>
+        </nav>
 
         {/* Main Content - Side by Side */}
         <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between md:gap-16">
@@ -81,7 +88,7 @@ export default function TalkTheGulfLanding() {
           </div>
         </div>
         {/* The Longer Story */}
-        <div className="mt-24 max-w-lg">
+        <div id="story" className="mt-24 max-w-lg">
           <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">the longer story</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
@@ -99,7 +106,7 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* Tips */}
-        <div className="mt-16 max-w-lg">
+        <div id="tips" className="mt-16 max-w-lg">
           <p className="mb-4 text-xs uppercase tracking-wide text-muted-foreground">tips for you</p>
           <ul className="space-y-2 text-sm leading-relaxed text-foreground/85">
             <li>expose yourself to everything. watch that show in arabic. watch that podcast. find a friend.</li>
