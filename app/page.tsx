@@ -42,6 +42,7 @@ export default function TalkTheGulfLanding() {
           <div className="w-full max-w-xs shrink-0">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                <p className="text-xs text-muted-foreground">ill be sharing insights, tips and vocab.</p>
                 <input
                   type="email"
                   value={email}
@@ -110,7 +111,7 @@ export default function TalkTheGulfLanding() {
 
         {/* Closing */}
         <p className="mt-16 text-sm italic text-muted-foreground">
-          {"anyways, ill be sharing insights, tips and vocab. sorry if im inconsistent — im still learning as well."}
+          {"sorry if im inconsistent — im still learning as well."}
         </p>
       </div>
     </main>
