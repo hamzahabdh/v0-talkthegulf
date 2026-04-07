@@ -20,23 +20,14 @@ export default function TalkTheGulfLanding() {
         <p 
           className="mb-16 text-xl font-medium"
           style={{
-            background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
-            backgroundSize: "200% 100%",
+            background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 100%)",
             WebkitBackgroundClip: "text",
             backgroundClip: "text",
             color: "transparent",
-            animation: "wave 3s ease-in-out infinite",
           }}
         >
           talkthegulf
         </p>
-        <style jsx>{`
-          @keyframes wave {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-          }
-        `}</style>
 
         {/* Main Content - Side by Side */}
         <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between md:gap-16">
@@ -59,18 +50,27 @@ export default function TalkTheGulfLanding() {
                   required
                   className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
                 />
-                <button
-                  type="submit"
-                  className="relative w-full rounded-md bg-background px-4 py-2 text-sm text-foreground transition-all hover:opacity-80"
-                  style={{
-                    border: "2px solid transparent",
-                    backgroundImage: "linear-gradient(white, white), linear-gradient(135deg, #00f7ff 0%, #1c8f65 100%)",
-                    backgroundOrigin: "border-box",
-                    backgroundClip: "padding-box, border-box",
-                  }}
-                >
-                  subscribe
-                </button>
+                <div className="relative rounded-md p-[2px] animate-wave" style={{
+                    background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
+                    backgroundSize: "200% 100%",
+                  }}>
+                    <button
+                      type="submit"
+                      className="w-full rounded-[4px] bg-white px-4 py-2 text-sm text-foreground transition-all hover:bg-gray-50"
+                    >
+                      subscribe
+                    </button>
+                  </div>
+                  <style jsx>{`
+                    @keyframes wave {
+                      0% { background-position: 0% 50%; }
+                      50% { background-position: 100% 50%; }
+                      100% { background-position: 0% 50%; }
+                    }
+                    .animate-wave {
+                      animation: wave 6s ease-in-out infinite;
+                    }
+                  `}</style>
               </form>
             ) : (
               <p className="text-sm text-foreground">
