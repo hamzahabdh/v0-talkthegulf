@@ -25,12 +25,12 @@ export default function TalkTheGulfLanding() {
           </p>
 
           {/* Arabic Greeting */}
-          <h1 className="mb-6 font-serif text-5xl font-bold tracking-tight text-foreground md:text-6xl">
+          <h1 className="mb-6 text-5xl font-bold tracking-tight text-foreground md:text-6xl">
             ahlan.
           </h1>
 
           {/* Tweet-sized copy (under 280 chars) */}
-          <p className="mx-auto mb-10 max-w-md font-serif text-xl leading-relaxed text-foreground/90 text-balance">
+          <p className="mx-auto mb-10 max-w-md text-xl leading-relaxed text-foreground/90 text-balance">
             You want to learn Arabic. I feel you. Fusha felt forced until I 
             discovered: dialect first, brain structure later. Fun is the 
             science-backed shortcut.
@@ -67,7 +67,7 @@ export default function TalkTheGulfLanding() {
             </form>
           ) : (
             <div className="mx-auto max-w-sm rounded-lg border border-primary/20 bg-primary/5 p-6">
-              <p className="font-serif text-lg text-foreground">
+              <p className="text-lg text-foreground">
                 مرحبا! You&apos;re in. Check your inbox soon.
               </p>
             </div>
@@ -78,11 +78,11 @@ export default function TalkTheGulfLanding() {
       {/* Extended story section - scrollable */}
       <section className="border-t border-border bg-card px-6 py-16">
         <div className="mx-auto max-w-xl">
-          <h2 className="mb-8 font-serif text-2xl font-bold text-card-foreground">
+          <h2 className="mb-8 text-2xl font-bold text-card-foreground">
             The longer story...
           </h2>
           
-          <div className="space-y-6 font-serif text-lg leading-relaxed text-card-foreground/85">
+          <div className="space-y-6 text-lg leading-relaxed text-card-foreground/85">
             <p>
               I started at a young age being forced to learn fusha. Then as I grew 
               older I became passionate for Arabic. Over time I realised that to 
@@ -115,7 +115,7 @@ export default function TalkTheGulfLanding() {
 
           {/* Tips */}
           <div className="mt-12 rounded-lg border border-border bg-background p-6">
-            <h3 className="mb-4 font-serif text-xl font-bold text-foreground">
+            <h3 className="mb-4 text-xl font-bold text-foreground">
               Tips for you:
             </h3>
             <ul className="space-y-3 text-foreground/85">
@@ -139,7 +139,7 @@ export default function TalkTheGulfLanding() {
           </div>
 
           {/* Closing */}
-          <p className="mt-12 font-serif text-lg italic text-muted-foreground">
+          <p className="mt-12 text-lg italic text-muted-foreground">
             Anyways, I&apos;ll be sharing insights, tips and vocab. Sorry if I&apos;m 
             inconsistent — I&apos;m still learning as well.
           </p>
