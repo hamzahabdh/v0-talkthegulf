@@ -116,7 +116,15 @@ export default function TalkTheGulfLanding() {
           </ul>
         </div>
 
-        
+        {/* Footer */}
+        <footer className="mt-24 border-t border-border pt-8">
+          <p className="text-xs text-muted-foreground">find and follow me here</p>
+          <div className="mt-3 flex items-center gap-4 text-xs text-foreground">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">twitter</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">instagram</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">youtube</a>
+          </div>
+        </footer>
       </div>
     </main>
   )
