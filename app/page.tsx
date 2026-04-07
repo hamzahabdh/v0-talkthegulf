@@ -59,6 +59,39 @@ export default function TalkTheGulfLanding() {
             )}
           </div>
         </div>
+        {/* The Longer Story */}
+        <div className="mt-24 max-w-lg">
+          <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">the longer story</p>
+          
+          <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
+            <p>
+              i started at a young age being forced to learn fusha. then as i grew older i became passionate for arabic. over time i realised that to acquire the language you need to have fun with it (yes science backs this).
+            </p>
+            <p>
+              my why? i want to understand fusha so i can understand islam better. but im going to reverse engineer it. dialect first. build the brain structure to immerse in the language.
+            </p>
+            <p>
+              i also just really like how arabic shapes the brain and that can be transferable across everything.{" "}
+              <a href="#" className="underline underline-offset-2 hover:text-primary">check the study</a>
+            </p>
+          </div>
+        </div>
+
+        {/* Tips */}
+        <div className="mt-16 max-w-lg">
+          <p className="mb-4 text-xs uppercase tracking-wide text-muted-foreground">tips for you</p>
+          <ul className="space-y-2 text-sm leading-relaxed text-foreground/85">
+            <li>expose yourself to everything. watch that show in arabic. watch that podcast. find a friend.</li>
+            <li>{"don't be afraid to make mistakes."}</li>
+            <li>know your why. write it down. hold yourself accountable.</li>
+            <li>{"it's not an easy journey (yet), so get ready to dive in and come out the other side fluent."}</li>
+          </ul>
+        </div>
+
+        {/* Closing */}
+        <p className="mt-16 text-sm italic text-muted-foreground">
+          {"anyways, ill be sharing insights, tips and vocab. sorry if im inconsistent — im still learning as well."}
+        </p>
       </div>
     </main>
   )
