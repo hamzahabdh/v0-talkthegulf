@@ -40,7 +40,7 @@ export default function TalkTheGulfLanding() {
         <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between md:gap-16">
           {/* Left: Copy */}
           <div className="max-w-md">
-            <h1 className="mb-4 text-2xl font-bold text-foreground">ahlan.</h1>
+            <h1 className="mb-4 text-2xl font-bold text-foreground">أهلاً.</h1>
             <p className="text-sm leading-relaxed text-foreground">
               you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey.
             </p>
