@@ -17,7 +17,26 @@ export default function TalkTheGulfLanding() {
     <main className="min-h-screen bg-background px-6 py-12 md:py-20">
       <div className="mx-auto max-w-4xl">
         {/* Logo */}
-        <p className="mb-16 text-xl font-medium text-foreground">talkthegulf</p>
+        <p 
+          className="mb-16 text-xl font-medium"
+          style={{
+            background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
+            backgroundSize: "200% 100%",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            animation: "wave 3s ease-in-out infinite",
+          }}
+        >
+          talkthegulf
+        </p>
+        <style jsx>{`
+          @keyframes wave {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+          }
+        `}</style>
 
         {/* Main Content - Side by Side */}
         <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between md:gap-16">
