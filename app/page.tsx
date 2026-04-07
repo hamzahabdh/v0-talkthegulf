@@ -34,7 +34,7 @@ export default function TalkTheGulfLanding() {
           {/* Left: Copy */}
           <div className="max-w-md">
             <p className="text-sm leading-relaxed text-foreground">
-              ahlan. you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey. ill share tips, vocab, and honest updates. sorry if im inconsistent, still learning too.
+              ahlan. you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function TalkTheGulfLanding() {
           <div className="w-full max-w-xs shrink-0">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-                <p className="text-xs text-muted-foreground">ill be sharing insights, tips and vocab.</p>
+                <p className="text-xs text-muted-foreground">ill share tips, vocab, and honest updates. sorry if im inconsistent, still learning too.</p>
                 <input
                   type="email"
                   value={email}
@@ -109,10 +109,7 @@ export default function TalkTheGulfLanding() {
           </ul>
         </div>
 
-        {/* Closing */}
-        <p className="mt-16 text-sm italic text-muted-foreground">
-          {"sorry if im inconsistent — im still learning as well."}
-        </p>
+        
       </div>
     </main>
   )
