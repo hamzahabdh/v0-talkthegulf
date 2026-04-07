@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowRight } from "lucide-react"
 
 export default function TalkTheGulfLanding() {
   const [email, setEmail] = useState("")
@@ -18,7 +17,7 @@ export default function TalkTheGulfLanding() {
     <main className="min-h-screen bg-background px-6 py-12 md:py-20">
       <div className="mx-auto max-w-4xl">
         {/* Logo */}
-        <p className="mb-16 text-sm text-foreground">talkthegulf</p>
+        <p className="mb-16 text-xl font-medium text-foreground">talkthegulf</p>
 
         {/* Main Content - Side by Side */}
         <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between md:gap-16">
@@ -43,13 +42,15 @@ export default function TalkTheGulfLanding() {
                 />
                 <button
                   type="submit"
-                  className="group flex w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-sm text-primary-foreground transition-all hover:opacity-90"
+                  className="relative w-full rounded-md bg-background px-4 py-2 text-sm text-foreground transition-all hover:opacity-80"
                   style={{
-                    background: "linear-gradient(135deg, #00f7ff 0%, #1c8f65 100%)",
+                    border: "2px solid transparent",
+                    backgroundImage: "linear-gradient(white, white), linear-gradient(135deg, #00f7ff 0%, #1c8f65 100%)",
+                    backgroundOrigin: "border-box",
+                    backgroundClip: "padding-box, border-box",
                   }}
                 >
-                  yalla, lets go
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                  subscribe
                 </button>
               </form>
             ) : (
