@@ -76,16 +76,17 @@ export default function TalkTheGulfLanding() {
 
         {/* Main Content */}
         <div className="max-w-sm">
-          <h1 className="mb-4 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
+          <h1 className="mb-2 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
+          <p className="mb-4 text-xs text-muted-foreground">Gulf Arabic phrases & frameworks to help you actually speak it.</p>
           <p className="text-sm leading-relaxed text-foreground">
-            you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey.
+            You want to learn arabic. I feel you. fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
           </p>
 
           {/* CTA */}
-          <div className="mt-8 max-w-[240px]">
+          <div className="mt-8 max-w-[280px]">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-                <p className="text-xs text-muted-foreground">ill share tips, vocab, and honest updates. sorry if im inconsistent, still learning too.</p>
+                <p className="text-xs text-muted-foreground">Join other learners on the same journey. You probably belong here.</p>
                 <input
                   type="email"
                   value={email}
@@ -154,6 +155,9 @@ export default function TalkTheGulfLanding() {
           <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">the longer story</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
+            <p>
+              I&apos;ll share my insights, tips, vocabs and anything relevant. Sorry if I&apos;m inconsistent, I&apos;m still learning too :)
+            </p>
             <p>
               i started at a young age being forced to learn fusha. then as i grew older i became passionate for arabic. over time i realised that to acquire the language you need to have fun with it (yes science backs this).
             </p>
