@@ -77,7 +77,7 @@ export default function TalkTheGulfLanding() {
             Gulf Arabic frameworks and resources{" "}
             <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
           </h1>
-          <p className="mb-4 text-xs text-muted-foreground">Ahlan / أهلاً (means welcome)</p>
+          <p className="mb-4 text-xs text-muted-foreground">Ahlan / <span dir="rtl">أهلاً</span> (means welcome)</p>
           <p className="text-sm leading-relaxed text-foreground">
             You want to learn Arabic. I feel you. Fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
           </p>
