@@ -130,7 +130,7 @@ export default function TalkTheGulfLanding() {
 
         {/* Resources for you */}
         <div id="guides" className="mt-16">
-          <p className="mb-3 text-base text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>Resources for you</p>
+          <p className="mb-3 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>Resources for you</p>
           <div className="flex flex-col gap-3">
             {guides.map((guide) => (
               <button
