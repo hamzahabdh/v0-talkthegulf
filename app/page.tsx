@@ -140,7 +140,7 @@ export default function TalkTheGulfLanding() {
               >
                 <h3 
                   className="text-lg text-foreground transition-colors"
-                  style={{ fontFamily: "'Caveat', cursive" }}
+                  style={{ fontFamily: "'Shantell Sans', cursive" }}
                 >
                   {guide.title}
                 </h3>
