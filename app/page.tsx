@@ -1,16 +1,53 @@
 "use client"
 
 import { useState } from "react"
+import { X } from "lucide-react"
+
+const guides = [
+  {
+    id: "saudi-greetings",
+    title: "25 Saudi greetings (free)",
+    description: "Essential greetings to sound natural from day one.",
+  },
+  {
+    id: "gulf-slang",
+    title: "Gulf slang cheat sheet",
+    description: "The words you won't find in textbooks but hear everywhere.",
+  },
+  {
+    id: "arabic-brain",
+    title: "How Arabic shapes your brain",
+    description: "The science behind why learning Arabic makes you sharper.",
+  },
+]
 
 export default function TalkTheGulfLanding() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
+  const [selectedGuide, setSelectedGuide] = useState<typeof guides[0] | null>(null)
+  const [guideEmail, setGuideEmail] = useState("")
+  const [guideSubmitted, setGuideSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (email) {
       setSubmitted(true)
     }
+  }
+
+  const handleGuideSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (guideEmail && selectedGuide) {
+      // Here you would integrate with Kit API
+      // POST to /api/subscribe with email and guide tag
+      setGuideSubmitted(true)
+    }
+  }
+
+  const closeModal = () => {
+    setSelectedGuide(null)
+    setGuideEmail("")
+    setGuideSubmitted(false)
   }
 
   return (
@@ -31,6 +68,7 @@ export default function TalkTheGulfLanding() {
           </p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
             <a href="#story" className="hover:text-foreground transition-colors">story</a>
+            <a href="#guides" className="hover:text-foreground transition-colors">guides</a>
             <a href="#tips" className="hover:text-foreground transition-colors">tips</a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">twitter</a>
           </div>
@@ -88,6 +126,28 @@ export default function TalkTheGulfLanding() {
             )}
           </div>
         </div>
+
+        {/* Popular Guides */}
+        <div id="guides" className="mt-24">
+          <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">popular guides</p>
+          <div className="flex flex-col gap-4">
+            {guides.map((guide) => (
+              <button
+                key={guide.id}
+                onClick={() => setSelectedGuide(guide)}
+                className="group w-full rounded-xl border border-border bg-card p-5 text-left transition-all hover:border-primary/30 hover:shadow-sm"
+              >
+                <h3 className="text-base font-bold text-card-foreground group-hover:text-primary transition-colors">
+                  {guide.title}
+                </h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {guide.description}
+                </p>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* The Longer Story */}
         <div id="story" className="mt-24 max-w-lg">
           <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">the longer story</p>
@@ -127,6 +187,52 @@ export default function TalkTheGulfLanding() {
           </div>
         </footer>
       </div>
+
+      {/* Guide Modal */}
+      {selectedGuide && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={closeModal}>
+          <div 
+            className="relative w-full max-w-sm rounded-xl bg-background p-6 shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute right-4 top-4 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <X className="h-4 w-4" />
+            </button>
+
+            {!guideSubmitted ? (
+              <>
+                <h3 className="text-lg font-bold text-foreground pr-6">{selectedGuide.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{selectedGuide.description}</p>
+                
+                <form onSubmit={handleGuideSubmit} className="mt-6 flex flex-col gap-3">
+                  <input
+                    type="email"
+                    value={guideEmail}
+                    onChange={(e) => setGuideEmail(e.target.value)}
+                    placeholder="your@email.com"
+                    required
+                    className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                  />
+                  <button
+                    type="submit"
+                    className="w-full rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground transition-all hover:opacity-90"
+                  >
+                    send me the guide
+                  </button>
+                </form>
+              </>
+            ) : (
+              <div className="text-center py-4">
+                <p className="text-lg font-bold text-foreground">يلا!</p>
+                <p className="mt-2 text-sm text-muted-foreground">check your inbox for the guide.</p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </main>
   )
 }
