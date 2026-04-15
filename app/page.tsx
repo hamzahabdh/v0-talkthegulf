@@ -83,7 +83,7 @@ export default function TalkTheGulfLanding() {
             <img 
               src="/images/hero-sticker.png" 
               alt="Gulf vibes" 
-              className="w-64 h-64 object-contain md:w-80 md:h-80"
+              className="w-80 h-80 object-contain md:w-96 md:h-96"
             />
           </div>
 
