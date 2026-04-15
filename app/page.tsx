@@ -76,8 +76,11 @@ export default function TalkTheGulfLanding() {
 
         {/* Main Content */}
         <div className="max-w-sm">
-          <h1 className="mb-2 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
-          <p className="mb-4 text-xs text-muted-foreground">Gulf Arabic phrases & frameworks to help you actually speak it.</p>
+          <h1 className="mb-2 text-2xl font-bold text-foreground">
+            Gulf Arabic phrases & frameworks{" "}
+            <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
+          </h1>
+          <p className="mb-4 text-xs text-muted-foreground">ahlan / أهلاً</p>
           <p className="text-sm leading-relaxed text-foreground">
             You want to learn arabic. I feel you. fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
           </p>
