@@ -153,9 +153,9 @@ export default function TalkTheGulfLanding() {
           </div>
         </div>
 
-        {/* The Longer Story */}
+        {/* A Bit About My Journey */}
         <div id="story" className="mt-24 max-w-lg">
-          <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">the longer story</p>
+          <p className="mb-6 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>a bit about my journey</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
             <p>
@@ -171,9 +171,9 @@ export default function TalkTheGulfLanding() {
           </div>
         </div>
 
-        {/* Tips */}
+        {/* My Genuine Advice */}
         <div id="tips" className="mt-16 max-w-lg">
-          <p className="mb-4 text-xs uppercase tracking-wide text-muted-foreground">tips for you</p>
+          <p className="mb-4 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>my genuine advice for you</p>
           <ul className="space-y-3 text-sm leading-relaxed text-foreground/85">
             <li className="flex items-start gap-2">
               <svg className="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none">
