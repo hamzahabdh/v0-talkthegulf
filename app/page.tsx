@@ -155,7 +155,7 @@ export default function TalkTheGulfLanding() {
 
         {/* A Bit About My Journey */}
         <div id="story" className="mt-16 max-w-lg">
-          <p className="mb-6 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>a bit about my journey</p>
+          <p className="mb-6 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>My journey</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
             <p>
@@ -173,7 +173,7 @@ export default function TalkTheGulfLanding() {
 
         {/* My Genuine Advice */}
         <div id="tips" className="mt-12 max-w-lg">
-          <p className="mb-4 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>my genuine advice for you</p>
+          <p className="mb-4 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>Tips</p>
           <ul className="space-y-3 text-sm leading-relaxed text-foreground/85">
             <li className="flex items-start gap-2">
               <svg className="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none">
