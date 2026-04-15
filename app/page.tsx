@@ -51,8 +51,8 @@ export default function TalkTheGulfLanding() {
   }
 
   return (
-    <main className="min-h-screen bg-background px-6 py-12 md:py-20">
-      <div className="mx-auto max-w-4xl">
+    <main className="min-h-screen bg-background px-6 py-12 md:px-12 md:py-20">
+      <div className="mx-auto max-w-xl">
         {/* Header */}
         <nav className="mb-16 flex items-center gap-6">
           <p 
@@ -75,9 +75,9 @@ export default function TalkTheGulfLanding() {
         </nav>
 
         {/* Main Content - Side by Side */}
-        <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between md:gap-16">
+        <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-12">
           {/* Left: Copy */}
-          <div className="max-w-md">
+          <div className="flex-1">
             <h1 className="mb-4 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
             <p className="text-sm leading-relaxed text-foreground">
               you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey.
@@ -85,7 +85,7 @@ export default function TalkTheGulfLanding() {
           </div>
 
           {/* Right: CTA */}
-          <div className="w-full max-w-xs shrink-0">
+          <div className="w-full max-w-[220px] shrink-0">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                 <p className="text-xs text-muted-foreground">ill share tips, vocab, and honest updates. sorry if im inconsistent, still learning too.</p>
@@ -135,7 +135,7 @@ export default function TalkTheGulfLanding() {
               <button
                 key={guide.id}
                 onClick={() => setSelectedGuide(guide)}
-                className="group w-full rounded-lg px-4 py-3 text-left transition-all hover:opacity-80"
+                className="group max-w-md rounded-lg px-4 py-3 text-left transition-all hover:opacity-80"
                 style={{ backgroundColor: "#E9E3D7" }}
               >
                 <h3 
