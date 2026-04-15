@@ -133,7 +133,7 @@ export default function TalkTheGulfLanding() {
                 key={guide.id}
                 onClick={() => setSelectedGuide(guide)}
                 className="group max-w-xs rounded-lg px-3 py-2.5 text-left transition-all hover:opacity-80"
-                style={{ backgroundColor: "#E9E3D7" }}
+                style={{ backgroundColor: "#F2EDE4" }}
               >
                 <h3 
                   className="text-base text-foreground transition-colors"
