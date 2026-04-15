@@ -72,7 +72,21 @@ export default function TalkTheGulfLanding() {
         </nav>
 
         {/* Main Content */}
-        <div className="max-w-sm">
+        <div className="relative max-w-sm">
+          {/* Hero Sticker - positioned on the right */}
+          <div 
+            className="absolute -right-32 top-0 hidden md:block"
+            style={{
+              filter: "drop-shadow(4px 4px 12px rgba(0,0,0,0.15))",
+            }}
+          >
+            <img 
+              src="/images/hero-sticker.png" 
+              alt="Gulf vibes" 
+              className="w-40 h-40 object-contain"
+            />
+          </div>
+
           <h1 className="mb-2 text-2xl font-bold text-foreground">
             Gulf Arabic frameworks and resources{" "}
             <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
