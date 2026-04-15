@@ -51,8 +51,8 @@ export default function TalkTheGulfLanding() {
   }
 
   return (
-    <main className="min-h-screen bg-background px-6 py-12 md:px-12 md:py-20">
-      <div className="mx-auto max-w-xl">
+    <main className="flex min-h-screen flex-col bg-background">
+      <div className="mx-auto max-w-xl flex-1 px-6 py-12 md:px-12 md:py-20">
         {/* Header */}
         <nav className="mb-16 flex items-center justify-between">
           <p 
@@ -202,9 +202,10 @@ export default function TalkTheGulfLanding() {
           </ul>
         </div>
 
-        {/* Footer */}
-      </div>
-      <footer className="mt-16 px-6 pt-8 md:px-12" style={{ backgroundColor: "#132225" }}>
+        </div>
+      
+      {/* Footer */}
+      <footer className="px-6 py-8 md:px-12" style={{ backgroundColor: "#132225" }}>
         <div className="mx-auto max-w-xl">
           <p className="text-xs text-white">Find and follow me here</p>
           <div className="mt-3 flex items-center gap-2 text-xs text-white">
