@@ -74,18 +74,15 @@ export default function TalkTheGulfLanding() {
           </div>
         </nav>
 
-        {/* Main Content - Side by Side */}
-        <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-12">
-          {/* Left: Copy */}
-          <div className="flex-1">
-            <h1 className="mb-4 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
-            <p className="text-sm leading-relaxed text-foreground">
-              you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey.
-            </p>
-          </div>
+        {/* Main Content */}
+        <div className="max-w-sm">
+          <h1 className="mb-4 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
+          <p className="text-sm leading-relaxed text-foreground">
+            you want to learn arabic. i feel you. fusha felt forced until i discovered the shortcut: dialect first, fun second. science backs it. whether its for your career, relocating east, or just a love for the language — stick around. im on the same journey.
+          </p>
 
-          {/* Right: CTA */}
-          <div className="w-full max-w-[220px] shrink-0">
+          {/* CTA */}
+          <div className="mt-8 max-w-[240px]">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                 <p className="text-xs text-muted-foreground">ill share tips, vocab, and honest updates. sorry if im inconsistent, still learning too.</p>
@@ -135,11 +132,11 @@ export default function TalkTheGulfLanding() {
               <button
                 key={guide.id}
                 onClick={() => setSelectedGuide(guide)}
-                className="group max-w-md rounded-lg px-4 py-3 text-left transition-all hover:opacity-80"
+                className="group max-w-xs rounded-lg px-3 py-2.5 text-left transition-all hover:opacity-80"
                 style={{ backgroundColor: "#E9E3D7" }}
               >
                 <h3 
-                  className="text-lg text-foreground transition-colors"
+                  className="text-base text-foreground transition-colors"
                   style={{ fontFamily: "'Shantell Sans', cursive" }}
                 >
                   {guide.title}
