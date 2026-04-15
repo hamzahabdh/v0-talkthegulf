@@ -54,7 +54,7 @@ export default function TalkTheGulfLanding() {
     <main className="min-h-screen bg-background px-6 py-12 md:px-12 md:py-20">
       <div className="mx-auto max-w-xl">
         {/* Header */}
-        <nav className="mb-20 flex items-center gap-6">
+        <nav className="mb-16 flex items-center gap-6">
           <p 
             className="text-xl font-bold"
             style={{
@@ -74,72 +74,54 @@ export default function TalkTheGulfLanding() {
           </div>
         </nav>
 
-        {/* Hero - Two Column */}
-        <div className="flex flex-col gap-12 md:flex-row md:gap-16">
-          {/* Left: Bio */}
-          <div className="md:w-1/3">
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              i started learning arabic young — forced into fusha. over time, i fell in love with it. now i&apos;m reverse engineering: dialect first, fusha later.
-            </p>
-            <p className="mt-4 text-xs text-muted-foreground leading-relaxed">
-              i believe arabic shapes the brain in ways that transfer across everything.{" "}
-              <a href="#" className="underline underline-offset-2 hover:text-foreground">check the study</a>
-            </p>
-          </div>
+        {/* Main Content */}
+        <div className="max-w-sm">
+          <h1 className="mb-2 text-2xl font-bold text-foreground">ahlan / أهلاً</h1>
+          <p className="mb-4 text-xs text-muted-foreground">Gulf Arabic phrases & frameworks to help you actually speak it.</p>
+          <p className="text-sm leading-relaxed text-foreground">
+            You want to learn arabic. I feel you. fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
+          </p>
 
-          {/* Right: Headline + Copy + CTA */}
-          <div className="md:w-2/3">
-            <h1 
-              className="text-3xl md:text-4xl font-bold text-foreground leading-tight"
-              style={{ fontFamily: "'Libre Baskerville', serif" }}
-            >
-              Gulf Arabic phrases & frameworks to help you{" "}
-              <span style={{ color: "#2F7058" }}>actually speak it.</span>
-            </h1>
-
-            <div className="mt-8 space-y-4 text-sm leading-relaxed text-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
-              <p>
-                you want to learn arabic. i feel you. fusha felt forced until i rethought things — have fun with it. science backs it.
+          {/* CTA */}
+          <div className="mt-8 max-w-[280px]">
+            {!submitted ? (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                <p className="text-xs text-muted-foreground">Join other learners on the same journey. You probably belong here.</p>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  required
+                  className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                />
+                <div className="relative rounded-md p-[2px] animate-wave" style={{
+                    background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
+                    backgroundSize: "200% 100%",
+                  }}>
+                    <button
+                      type="submit"
+                      className="w-full rounded-[4px] bg-white px-4 py-2 text-sm text-foreground transition-all hover:bg-gray-50"
+                    >
+                      subscribe
+                    </button>
+                  </div>
+                  <style jsx>{`
+                    @keyframes wave {
+                      0% { background-position: 0% 50%; }
+                      50% { background-position: 100% 50%; }
+                      100% { background-position: 0% 50%; }
+                    }
+                    .animate-wave {
+                      animation: wave 6s ease-in-out infinite;
+                    }
+                  `}</style>
+              </form>
+            ) : (
+              <p className="text-sm text-foreground">
+                مرحبا! you&apos;re in. check your inbox.
               </p>
-              <p>
-                whatever reason you have for learning arabic (all are valid) - stick around. i&apos;m on the same journey, just a bit further down the line.
-              </p>
-              <p>
-                i&apos;ll share my insights, tips, vocabs and anything relevant. sorry if i&apos;m inconsistent, i&apos;m still learning too.
-              </p>
-            </div>
-
-            <p className="mt-6 text-sm font-medium" style={{ color: "#2F7058", fontFamily: "'Inter', sans-serif" }}>
-              join 500+ learners on the same journey
-            </p>
-
-            {/* CTA */}
-            <div className="mt-4">
-              {!submitted ? (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="your@email.com"
-                    required
-                    className="w-full border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#2F7058]"
-                    style={{ fontFamily: "'Inter', sans-serif" }}
-                  />
-                  <button
-                    type="submit"
-                    className="w-full px-4 py-2.5 text-sm text-white transition-all hover:opacity-90"
-                    style={{ backgroundColor: "#2F7058", fontFamily: "'Inter', sans-serif" }}
-                  >
-                    subscribe
-                  </button>
-                </form>
-              ) : (
-                <p className="text-sm text-foreground" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  مرحبا! you&apos;re in. check your inbox.
-                </p>
-              )}
-            </div>
+            )}
           </div>
         </div>
 
@@ -169,24 +151,27 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* The Longer Story */}
-        <div id="story" className="mt-24 max-w-md">
+        <div id="story" className="mt-24 max-w-lg">
           <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">the longer story</p>
           
-          <div className="space-y-4 text-sm leading-relaxed text-foreground/85" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
+            <p>
+              i started at a young age being forced to learn fusha. then as i grew older i became passionate for arabic. over time i realised that to acquire the language you need to have fun with it (yes science backs this).
+            </p>
             <p>
               my why? i want to understand fusha so i can understand islam better. but im going to reverse engineer it. dialect first. build the brain structure to immerse in the language.
             </p>
             <p>
               i also just really like how arabic shapes the brain and that can be transferable across everything.{" "}
-              <a href="#" className="underline underline-offset-2 hover:text-[#2F7058]">check the study</a>
+              <a href="#" className="underline underline-offset-2 hover:text-primary">check the study</a>
             </p>
           </div>
         </div>
 
         {/* Tips */}
-        <div id="tips" className="mt-16 max-w-md">
+        <div id="tips" className="mt-16 max-w-lg">
           <p className="mb-4 text-xs uppercase tracking-wide text-muted-foreground">tips for you</p>
-          <ul className="space-y-2 text-sm leading-relaxed text-foreground/85" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <ul className="space-y-2 text-sm leading-relaxed text-foreground/85">
             <li>expose yourself to everything. watch that show in arabic. watch that podcast. find a friend.</li>
             <li>{"don't be afraid to make mistakes."}</li>
             <li>know your why. write it down. hold yourself accountable.</li>
@@ -195,12 +180,12 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-24 border-t border-border pt-8" style={{ fontFamily: "'Inter', sans-serif" }}>
+        <footer className="mt-24 border-t border-border pt-8">
           <p className="text-xs text-muted-foreground">find and follow me here</p>
           <div className="mt-3 flex items-center gap-4 text-xs text-foreground">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#2F7058] transition-colors">twitter</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#2F7058] transition-colors">instagram</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#2F7058] transition-colors">youtube</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">twitter</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">instagram</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">youtube</a>
           </div>
         </footer>
       </div>
