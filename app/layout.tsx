@@ -37,6 +37,10 @@ export default function RootLayout({
           href="https://fonts.cdnfonts.com/css/hacen-tunisia" 
           rel="stylesheet" 
         />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" 
+          rel="stylesheet" 
+        />
       </head>
       <body className="antialiased">
         {children}

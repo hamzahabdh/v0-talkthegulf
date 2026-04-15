@@ -130,21 +130,21 @@ export default function TalkTheGulfLanding() {
         {/* Popular Guides */}
         <div id="guides" className="mt-24">
           <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">popular guides</p>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="flex flex-col gap-3">
             {guides.map((guide) => (
               <button
                 key={guide.id}
                 onClick={() => setSelectedGuide(guide)}
-                className="group aspect-square rounded-xl p-5 text-left transition-all hover:opacity-80"
+                className="group w-full rounded-lg px-4 py-3 text-left transition-all hover:opacity-80"
                 style={{ backgroundColor: "#E9E3D7" }}
               >
                 <h3 
-                  className="text-base font-bold text-foreground transition-colors"
-                  style={{ fontFamily: "'Dreaming Outloud Sans', sans-serif" }}
+                  className="text-lg text-foreground transition-colors"
+                  style={{ fontFamily: "'Caveat', cursive" }}
                 >
                   {guide.title}
                 </h3>
-                <p className="mt-2 text-xs text-foreground/70">
+                <p className="mt-0.5 text-xs text-foreground/60">
                   {guide.description}
                 </p>
               </button>
