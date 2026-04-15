@@ -84,7 +84,7 @@ export default function TalkTheGulfLanding() {
 
           {/* Hero Sticker - below the intro paragraph */}
           <div 
-            className="mt-6"
+            className="mt-4 -ml-2"
             style={{
               filter: "drop-shadow(8px 8px 24px rgba(0,0,0,0.25))",
             }}
@@ -92,7 +92,7 @@ export default function TalkTheGulfLanding() {
             <img 
               src="/images/hero-sticker.png" 
               alt="Gulf vibes" 
-              className="w-80 h-80 object-contain md:w-96 md:h-96"
+              className="w-32 h-32 object-contain"
             />
           </div>
 
