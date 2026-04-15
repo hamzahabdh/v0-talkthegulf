@@ -174,11 +174,35 @@ export default function TalkTheGulfLanding() {
         {/* Tips */}
         <div id="tips" className="mt-16 max-w-lg">
           <p className="mb-4 text-xs uppercase tracking-wide text-muted-foreground">tips for you</p>
-          <ul className="space-y-2 text-sm leading-relaxed text-foreground/85">
-            <li>Expose yourself to everything. Watch that show in Arabic. Watch that podcast. Find a friend.</li>
-            <li>{"Don't be afraid to make mistakes."}</li>
-            <li>Know your why. Write it down. Hold yourself accountable.</li>
-            <li>{"It's not an easy journey (yet), so get ready to dive in and come out the other side fluent."}</li>
+          <ul className="space-y-3 text-sm leading-relaxed text-foreground/85">
+            <li className="flex items-start gap-2">
+              <svg className="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#starGradient1)"/>
+                <defs><linearGradient id="starGradient1" x1="2" y1="12" x2="22" y2="12"><stop stopColor="#00f7ff"/><stop offset="1" stopColor="#1c8f65"/></linearGradient></defs>
+              </svg>
+              <span>Expose yourself to everything. Watch that show in Arabic. Watch that podcast. Find a friend.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#starGradient2)"/>
+                <defs><linearGradient id="starGradient2" x1="2" y1="12" x2="22" y2="12"><stop stopColor="#00f7ff"/><stop offset="1" stopColor="#1c8f65"/></linearGradient></defs>
+              </svg>
+              <span>{"Don't be afraid to make mistakes."}</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#starGradient3)"/>
+                <defs><linearGradient id="starGradient3" x1="2" y1="12" x2="22" y2="12"><stop stopColor="#00f7ff"/><stop offset="1" stopColor="#1c8f65"/></linearGradient></defs>
+              </svg>
+              <span>Know your why. Write it down. Hold yourself accountable.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="mt-0.5 h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="url(#starGradient4)"/>
+                <defs><linearGradient id="starGradient4" x1="2" y1="12" x2="22" y2="12"><stop stopColor="#00f7ff"/><stop offset="1" stopColor="#1c8f65"/></linearGradient></defs>
+              </svg>
+              <span>{"It's not an easy journey (yet), so get ready to dive in and come out the other side fluent."}</span>
+            </li>
           </ul>
         </div>
 
