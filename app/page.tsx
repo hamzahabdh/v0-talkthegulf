@@ -73,9 +73,9 @@ export default function TalkTheGulfLanding() {
 
         {/* Main Content */}
         <div className="relative max-w-sm">
-          {/* Hero Sticker - positioned in the white space */}
+          {/* Hero Sticker - positioned in the white space above headline */}
           <div 
-            className="absolute -top-8 right-0 z-0 translate-x-1/2 md:translate-x-3/4"
+            className="absolute -top-28 right-0 z-0 translate-x-1/3 md:-top-32 md:translate-x-1/2"
             style={{
               filter: "drop-shadow(8px 8px 24px rgba(0,0,0,0.25))",
             }}
@@ -83,7 +83,7 @@ export default function TalkTheGulfLanding() {
             <img 
               src="/images/hero-sticker.png" 
               alt="Gulf vibes" 
-              className="w-56 h-56 object-contain md:w-72 md:h-72"
+              className="w-64 h-64 object-contain md:w-80 md:h-80"
             />
           </div>
 
