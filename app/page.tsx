@@ -72,10 +72,19 @@ export default function TalkTheGulfLanding() {
         </nav>
 
         {/* Main Content */}
-        <div className="relative max-w-sm">
-          {/* Hero Sticker - positioned in the white space above headline */}
+        <div className="max-w-sm">
+          <h1 className="mb-2 text-2xl font-bold text-foreground">
+            Gulf Arabic frameworks and resources{" "}
+            <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
+          </h1>
+          <p className="mb-4 text-xs text-muted-foreground">Ahlan / <span dir="rtl">أهلاً</span> (means welcome)</p>
+          <p className="text-sm leading-relaxed text-foreground">
+            You want to learn Arabic. I feel you. Fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
+          </p>
+
+          {/* Hero Sticker - below the intro paragraph */}
           <div 
-            className="absolute -top-28 right-0 z-0 translate-x-1/3 md:-top-32 md:translate-x-1/2"
+            className="mt-6"
             style={{
               filter: "drop-shadow(8px 8px 24px rgba(0,0,0,0.25))",
             }}
@@ -86,15 +95,6 @@ export default function TalkTheGulfLanding() {
               className="w-80 h-80 object-contain md:w-96 md:h-96"
             />
           </div>
-
-          <h1 className="relative z-10 mb-2 text-2xl font-bold text-foreground">
-            Gulf Arabic frameworks and resources{" "}
-            <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
-          </h1>
-          <p className="mb-4 text-xs text-muted-foreground">Ahlan / <span dir="rtl">أهلاً</span> (means welcome)</p>
-          <p className="text-sm leading-relaxed text-foreground">
-            You want to learn Arabic. I feel you. Fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
-          </p>
 
           {/* CTA */}
           <div className="mt-8 max-w-[280px]">
