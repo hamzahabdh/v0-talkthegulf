@@ -67,10 +67,7 @@ export default function TalkTheGulfLanding() {
             talkthegulf
           </p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
-            <a href="#story" className="hover:text-foreground transition-colors">story</a>
-            <a href="#guides" className="hover:text-foreground transition-colors">guides</a>
-            <a href="#tips" className="hover:text-foreground transition-colors">tips</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">twitter</a>
+            <a href="/journey" className="hover:text-foreground transition-colors">About Me</a>
           </div>
         </nav>
 

@@ -1,6 +1,19 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 
 export default function JourneyPage() {
+  const [email, setEmail] = useState("")
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (email) {
+      setSubmitted(true)
+    }
+  }
+
   return (
     <main className="min-h-screen bg-background px-6 py-12 md:px-12 md:py-20">
       <div className="mx-auto max-w-xl">
@@ -19,17 +32,13 @@ export default function JourneyPage() {
             talkthegulf
           </Link>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
-            <Link href="/#story" className="hover:text-foreground transition-colors">story</Link>
-            <Link href="/#guides" className="hover:text-foreground transition-colors">guides</Link>
-            <Link href="/#tips" className="hover:text-foreground transition-colors">tips</Link>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">twitter</a>
+            <Link href="/journey" className="hover:text-foreground transition-colors">About Me</Link>
           </div>
         </nav>
 
         {/* Journey Content */}
         <div className="max-w-lg">
-          <h1 className="mb-2 text-2xl font-bold text-foreground">My journey</h1>
-          <p className="mb-8 text-xs text-muted-foreground">The full story of how I fell in love with Arabic</p>
+          <h1 className="mb-8 text-2xl font-bold text-foreground">My journey</h1>
           
           <div className="space-y-6 text-sm leading-relaxed text-foreground/85">
             <p>
@@ -93,9 +102,60 @@ export default function JourneyPage() {
               So stick around on this journey. I&apos;ve got a lot of things I want to share. Including resources and advice from my expert friends who are professors and teach Arabic to non-native speakers.
             </p>
             
-            <p className="text-base font-medium text-foreground">
-              أشوفكم مرة جاي - Ashufkum marra jaay
+            <div className="mt-8">
+              <p className="text-right text-lg font-medium text-foreground" dir="rtl">
+                أشوفكم مرة جاي
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Ashufkum marra jaay (means see you next time)
+              </p>
+            </div>
+
+            <p className="mt-4 text-sm font-medium text-foreground">
+              Hamzah
             </p>
+          </div>
+
+          {/* Subscribe Section */}
+          <div className="mt-12 max-w-[280px]">
+            {!submitted ? (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                <p className="text-xs text-muted-foreground">Join other learners on the same journey. You probably belong here.</p>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  required
+                  className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
+                />
+                <div className="relative rounded-md p-[2px] animate-wave" style={{
+                    background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
+                    backgroundSize: "200% 100%",
+                  }}>
+                    <button
+                      type="submit"
+                      className="w-full rounded-[4px] bg-white px-4 py-2 text-sm text-foreground transition-all hover:bg-gray-50"
+                    >
+                      subscribe
+                    </button>
+                  </div>
+                  <style jsx>{`
+                    @keyframes wave {
+                      0% { background-position: 0% 50%; }
+                      50% { background-position: 100% 50%; }
+                      100% { background-position: 0% 50%; }
+                    }
+                    .animate-wave {
+                      animation: wave 6s ease-in-out infinite;
+                    }
+                  `}</style>
+              </form>
+            ) : (
+              <p className="text-sm text-foreground">
+                مرحبا! You&apos;re in. Check your inbox.
+              </p>
+            )}
           </div>
 
           <Link 
