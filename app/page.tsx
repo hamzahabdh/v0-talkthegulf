@@ -77,12 +77,12 @@ export default function TalkTheGulfLanding() {
         {/* Main Content */}
         <div className="max-w-sm">
           <h1 className="mb-2 text-2xl font-bold text-foreground">
-            Gulf Arabic phrases & frameworks{" "}
+            Gulf Arabic frameworks and resources{" "}
             <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
           </h1>
           <p className="mb-4 text-xs text-muted-foreground">ahlan / أهلاً</p>
           <p className="text-sm leading-relaxed text-foreground">
-            You want to learn arabic. I feel you. fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
+            You want to learn Arabic. I feel you. Fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
           </p>
 
           {/* CTA */}
@@ -122,7 +122,7 @@ export default function TalkTheGulfLanding() {
               </form>
             ) : (
               <p className="text-sm text-foreground">
-                مرحبا! you&apos;re in. check your inbox.
+                مرحبا! You&apos;re in. Check your inbox.
               </p>
             )}
           </div>
@@ -159,14 +159,14 @@ export default function TalkTheGulfLanding() {
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
             <p>
-              i started at a young age being forced to learn fusha. then as i grew older i became passionate for arabic. over time i realised that to acquire the language you need to have fun with it (yes science backs this).
+              I started at a young age being forced to learn Fusha. Then as I grew older I became passionate for Arabic. Over time I realised that to acquire the language you need to have fun with it (yes science backs this).
             </p>
             <p>
-              my why? i want to understand fusha so i can understand islam better. but im going to reverse engineer it. dialect first. build the brain structure to immerse in the language.
+              My why? I want to understand Fusha so I can understand Islam better. But I&apos;m going to reverse engineer it. Dialect first. Build the brain structure to immerse in the language.
             </p>
             <p>
-              i also just really like how arabic shapes the brain and that can be transferable across everything.{" "}
-              <a href="#" className="underline underline-offset-2 hover:text-primary">check the study</a>
+              I also just really like how Arabic shapes the brain and that can be transferable across everything.{" "}
+              <a href="#" className="underline underline-offset-2 hover:text-primary">Check the study</a>
             </p>
           </div>
         </div>
@@ -175,10 +175,10 @@ export default function TalkTheGulfLanding() {
         <div id="tips" className="mt-16 max-w-lg">
           <p className="mb-4 text-xs uppercase tracking-wide text-muted-foreground">tips for you</p>
           <ul className="space-y-2 text-sm leading-relaxed text-foreground/85">
-            <li>expose yourself to everything. watch that show in arabic. watch that podcast. find a friend.</li>
-            <li>{"don't be afraid to make mistakes."}</li>
-            <li>know your why. write it down. hold yourself accountable.</li>
-            <li>{"it's not an easy journey (yet), so get ready to dive in and come out the other side fluent."}</li>
+            <li>Expose yourself to everything. Watch that show in Arabic. Watch that podcast. Find a friend.</li>
+            <li>{"Don't be afraid to make mistakes."}</li>
+            <li>Know your why. Write it down. Hold yourself accountable.</li>
+            <li>{"It's not an easy journey (yet), so get ready to dive in and come out the other side fluent."}</li>
           </ul>
         </div>
 
@@ -232,7 +232,7 @@ export default function TalkTheGulfLanding() {
             ) : (
               <div className="text-center py-4">
                 <p className="text-lg font-bold text-foreground">يلا!</p>
-                <p className="mt-2 text-sm text-muted-foreground">check your inbox for the guide.</p>
+                <p className="mt-2 text-sm text-muted-foreground">Check your inbox for the guide.</p>
               </div>
             )}
           </div>
