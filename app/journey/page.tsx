@@ -18,7 +18,7 @@ export default function JourneyPage() {
     <main className="min-h-screen bg-background px-6 py-12 md:px-12 md:py-20">
       <div className="mx-auto max-w-xl">
         {/* Header */}
-        <nav className="mb-16 flex items-center gap-6">
+        <nav className="mb-16 flex items-center justify-between">
           <Link 
             href="/"
             className="text-xl font-bold"
@@ -31,7 +31,7 @@ export default function JourneyPage() {
           >
             talkthegulf
           </Link>
-          <div className="flex items-center gap-4 text-xs text-muted-foreground">
+          <div className="text-xs text-muted-foreground">
             <Link href="/journey" className="hover:text-foreground transition-colors">About Me</Link>
           </div>
         </nav>
@@ -137,7 +137,7 @@ export default function JourneyPage() {
                       type="submit"
                       className="w-full rounded-[4px] bg-white px-4 py-2 text-sm text-foreground transition-all hover:bg-gray-50"
                     >
-                      subscribe
+                      Subscribe
                     </button>
                   </div>
                   <style jsx>{`
