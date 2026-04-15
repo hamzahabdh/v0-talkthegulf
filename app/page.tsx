@@ -72,8 +72,22 @@ export default function TalkTheGulfLanding() {
         </nav>
 
         {/* Main Content */}
-        <div className="max-w-sm">
-          <h1 className="mb-2 text-2xl font-bold text-foreground">
+        <div className="relative max-w-sm">
+          {/* Hero Sticker - right aligned next to headline */}
+          <div 
+            className="absolute -right-4 top-0 z-0 md:-right-20"
+            style={{
+              filter: "drop-shadow(6px 6px 16px rgba(0,0,0,0.2))",
+            }}
+          >
+            <img 
+              src="/images/hero-sticker.png" 
+              alt="Gulf vibes" 
+              className="w-28 h-28 object-contain md:w-36 md:h-36"
+            />
+          </div>
+
+          <h1 className="relative z-10 mb-2 text-2xl font-bold text-foreground">
             Gulf Arabic frameworks and resources{" "}
             <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>to help you actually speak it.</span>
           </h1>
@@ -81,20 +95,6 @@ export default function TalkTheGulfLanding() {
           <p className="text-sm leading-relaxed text-foreground">
             You want to learn Arabic. I feel you. Fusha felt forced until I rethought things — have fun with it. Science backs it. Whatever reason you have for learning Arabic (all are valid) - stick around. I&apos;m on the same journey, just a bit further down the line.
           </p>
-
-          {/* Hero Sticker - below the intro paragraph */}
-          <div 
-            className="mt-4 -ml-2"
-            style={{
-              filter: "drop-shadow(8px 8px 24px rgba(0,0,0,0.25))",
-            }}
-          >
-            <img 
-              src="/images/hero-sticker.png" 
-              alt="Gulf vibes" 
-              className="w-32 h-32 object-contain"
-            />
-          </div>
 
           {/* CTA */}
           <div className="mt-8 max-w-[280px]">
