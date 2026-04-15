@@ -19,7 +19,7 @@ export default function TalkTheGulfLanding() {
         {/* Header */}
         <nav className="mb-16 flex items-center gap-6">
           <p 
-            className="text-xl font-medium"
+            className="text-xl font-bold"
             style={{
               background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 100%)",
               WebkitBackgroundClip: "text",
