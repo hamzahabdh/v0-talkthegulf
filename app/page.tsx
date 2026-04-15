@@ -128,9 +128,9 @@ export default function TalkTheGulfLanding() {
           </div>
         </div>
 
-        {/* Popular Guides */}
-        <div id="guides" className="mt-24">
-          <p className="mb-6 text-xs uppercase tracking-wide text-muted-foreground">popular guides</p>
+        {/* Resources for you */}
+        <div id="guides" className="mt-16">
+          <p className="mb-3 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>resources for you</p>
           <div className="flex flex-col gap-3">
             {guides.map((guide) => (
               <button
@@ -154,7 +154,7 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* A Bit About My Journey */}
-        <div id="story" className="mt-24 max-w-lg">
+        <div id="story" className="mt-16 max-w-lg">
           <p className="mb-6 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>a bit about my journey</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
@@ -172,7 +172,7 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* My Genuine Advice */}
-        <div id="tips" className="mt-16 max-w-lg">
+        <div id="tips" className="mt-12 max-w-lg">
           <p className="mb-4 text-base text-muted-foreground" style={{ fontFamily: "'Shantell Sans', cursive" }}>my genuine advice for you</p>
           <ul className="space-y-3 text-sm leading-relaxed text-foreground/85">
             <li className="flex items-start gap-2">
@@ -207,7 +207,7 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-24 border-t border-border pt-8">
+        <footer className="mt-16 border-t border-border pt-8">
           <p className="text-xs text-muted-foreground">find and follow me here</p>
           <div className="mt-3 flex items-center gap-4 text-xs text-foreground">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">twitter</a>
