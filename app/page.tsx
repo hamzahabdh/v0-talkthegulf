@@ -153,21 +153,20 @@ export default function TalkTheGulfLanding() {
           </div>
         </div>
 
-        {/* A Bit About My Journey */}
+        {/* My Journey */}
         <div id="story" className="mt-16 max-w-lg">
-          <p className="mb-6 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>My journey</p>
+          <p className="mb-4 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>My journey</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
             <p>
-              I started at a young age being forced to learn Fusha. Then as I grew older I became passionate for Arabic. Over time I realised that to acquire the language you need to have fun with it (yes science backs this).
+              I started learning Arabic at a young age with a Yemeni teacher. Well, I was forced to learn Fusha. Honestly I barely remembered what I learnt. The repeated grammar lessons didn&apos;t help at all.
             </p>
             <p>
-              My why? I want to understand Fusha so I can understand Islam better. But I&apos;m going to reverse engineer it. Dialect first. Build the brain structure to immerse in the language.
+              Then Covid. I had time. So I booked a Royal Jordanian to Jordan that Summer. Alone. But once again — grammar lessons that made me sleepy.
             </p>
-            <p>
-              I also just really like how Arabic shapes the brain and that can be transferable across everything.{" "}
-              <a href="#" className="underline underline-offset-2 hover:text-primary">Check the study</a>
-            </p>
+            <a href="/journey" className="inline-block text-sm underline underline-offset-2 hover:text-primary">
+              Read the full story
+            </a>
           </div>
         </div>
 
