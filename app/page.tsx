@@ -77,10 +77,10 @@ export default function TalkTheGulfLanding() {
           </h1>
           <p className="mb-4 text-xs text-muted-foreground">Ahlan / <span dir="rtl">أهلاً</span> (means welcome)</p>
           <p className="text-sm leading-relaxed text-foreground">
-            You want to learn Arabic in a way that feels natural, useful, and real. I get that. I sat through boring grammar lessons and methods that didn&apos;t stick - until I changed my approach.
+            You want to learn Arabic in a way that feels natural, useful, and real. I get that. I sat through the same boring grammar lessons. Methods that didn&apos;t stick. Until I changed my approach.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-foreground">
-            I&apos;ll be sharing weekly Gulf Arabic phrases, cultural context, and the Saudi dialect explained the way I wish someone had explained it to me - for learners, by a learner.
+            What I&apos;m building here is what I wish had existed - Gulf Arabic phrases with real cultural context, the Saudi dialect explained plainly, no grammar tables. For learners, by a learner.
           </p>
 
           {/* CTA */}
@@ -185,6 +185,9 @@ export default function TalkTheGulfLanding() {
             </p>
             <p>
               So I stopped the moment I had an excuse - my GCSEs.
+            </p>
+            <p>
+              Then something shifted.
             </p>
             <a href="/journey" className="inline-block text-sm underline underline-offset-2 hover:text-[#132225]">
               Read the full story
