@@ -8,14 +8,14 @@ export async function POST(request: NextRequest) {
   }
 
   const response = await fetch(
-    `https://api.kit.com/v4/forms/${process.env.KIT_FORM_ID}/subscribers`,
+    `https://api.convertkit.com/v3/forms/${process.env.KIT_FORM_ID}/subscribe`,
     {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Kit-Api-Key': process.env.KIT_API_KEY!,
-      },
-      body: JSON.stringify({ email_address: email }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        api_key: process.env.KIT_API_KEY,
+        email,
+      }),
     }
   )
 
