@@ -72,16 +72,19 @@ export default function TalkTheGulfLanding() {
             The Gulf Arabic resource I wished existed.{" "}
             <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>Now it does.</span>
           </h1>
-          <p className="mb-6 text-sm text-muted-foreground" dir="rtl">أهلاً <span dir="ltr">— Welcome.</span></p>
+          <p className="mb-4 text-xs text-muted-foreground">Ahlan / <span dir="rtl">أهلاً</span> (means welcome)</p>
           <p className="text-sm leading-relaxed text-foreground">
-            You want to learn Arabic in a way that feels natural, useful, and real. I get that. I sat through boring grammar lessons and methods that didn&apos;t stick - until I changed my approach. I&apos;ll be sharing weekly Gulf Arabic phrases, cultural context, and the Saudi dialect explained the way I wish someone had explained it to me - for learners, by a learner.
+            You want to learn Arabic in a way that feels natural, useful, and real. I get that. I sat through boring grammar lessons and methods that didn&apos;t stick - until I changed my approach.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-foreground">
+            I&apos;ll be sharing weekly Gulf Arabic phrases, cultural context, and the Saudi dialect explained the way I wish someone had explained it to me - for learners, by a learner.
           </p>
 
           {/* CTA */}
           <div className="mt-8">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-                <p className="text-xs text-muted-foreground">Be one of the first to join — founding subscribers get early access to the Gulf Starter Pack when it drops.</p>
+                <p className="text-xs text-muted-foreground">Join other learners on the same journey. You probably belong here.</p>
                 <input
                   type="email"
                   value={email}
@@ -90,13 +93,27 @@ export default function TalkTheGulfLanding() {
                   required
                   className="w-full border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#2F7058]"
                 />
-                <button
-                  type="submit"
-                  className="w-full px-4 py-2.5 text-sm text-white transition-all hover:opacity-90"
-                  style={{ backgroundColor: "#2F7058" }}
-                >
-                  Join the waitlist
-                </button>
+                <div className="relative p-[2px] animate-wave" style={{
+                    background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
+                    backgroundSize: "200% 100%",
+                  }}>
+                    <button
+                      type="submit"
+                      className="w-full bg-white px-4 py-2.5 text-sm text-foreground transition-all hover:bg-gray-50"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                  <style jsx>{`
+                    @keyframes wave {
+                      0% { background-position: 0% 50%; }
+                      50% { background-position: 100% 50%; }
+                      100% { background-position: 0% 50%; }
+                    }
+                    .animate-wave {
+                      animation: wave 6s ease-in-out infinite;
+                    }
+                  `}</style>
               </form>
             ) : (
               <p className="text-sm text-foreground">
@@ -127,11 +144,11 @@ export default function TalkTheGulfLanding() {
                   <p className="mt-1 text-xs text-foreground/60">
                     {guide.description}
                   </p>
-                  <p className="mt-2 text-xs font-medium" style={{ color: "#2F7058" }}>
+                  <p className="mt-2 text-xs font-medium" style={{ color: "#33dca3" }}>
                     {guide.action} →
                   </p>
                 </div>
-                <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" style={{ color: "#2F7058" }} />
+                <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" style={{ color: "#33dca3" }} />
               </button>
             ))}
           </div>
@@ -161,7 +178,7 @@ export default function TalkTheGulfLanding() {
       
       {/* Footer */}
       <footer className="px-6 py-8 md:px-12" style={{ backgroundColor: "#132225" }}>
-        <div className="mx-auto max-w-xl">
+        <div className="mx-auto w-full max-w-xl">
           <p className="text-sm text-white">Find and follow me here</p>
           <div className="mt-3 flex items-center gap-2 text-white">
             <a href="https://instagram.com/talkthegulf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base hover:opacity-80 transition-opacity">

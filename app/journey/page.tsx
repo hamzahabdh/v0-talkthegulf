@@ -79,7 +79,7 @@ export default function JourneyPage() {
             
             <p>
               The turning point was dropping Fusha and engaging with dialects first. I thought - let me build the brain structure of a native speaker first, then everything else will sit on top of it naturally. That dropped the anxiety, and I started having fun with it. The science backs this approach to language acquisition.{" "}
-              <a href="#" className="underline underline-offset-2 hover:text-[#2F7058]">Check the study here.</a>
+              <a href="https://sdkrashen.com/content/articles/krashen_sla.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#2F7058]">Click here.</a>
             </p>
             
             <p>
@@ -108,7 +108,7 @@ export default function JourneyPage() {
           <div className="mt-12">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-                <p className="text-xs text-muted-foreground">Be one of the first to join — founding subscribers get early access to the Gulf Starter Pack when it drops.</p>
+                <p className="text-xs text-muted-foreground">Join other learners on the same journey. You probably belong here.</p>
                 <input
                   type="email"
                   value={email}
@@ -117,13 +117,27 @@ export default function JourneyPage() {
                   required
                   className="w-full border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#2F7058]"
                 />
-                <button
-                  type="submit"
-                  className="w-full px-4 py-2.5 text-sm text-white transition-all hover:opacity-90"
-                  style={{ backgroundColor: "#2F7058" }}
-                >
-                  Join the waitlist
-                </button>
+                <div className="relative p-[2px] animate-wave" style={{
+                    background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
+                    backgroundSize: "200% 100%",
+                  }}>
+                    <button
+                      type="submit"
+                      className="w-full bg-white px-4 py-2.5 text-sm text-foreground transition-all hover:bg-gray-50"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                  <style jsx>{`
+                    @keyframes wave {
+                      0% { background-position: 0% 50%; }
+                      50% { background-position: 100% 50%; }
+                      100% { background-position: 0% 50%; }
+                    }
+                    .animate-wave {
+                      animation: wave 6s ease-in-out infinite;
+                    }
+                  `}</style>
               </form>
             ) : (
               <p className="text-sm text-foreground">
@@ -143,7 +157,7 @@ export default function JourneyPage() {
       
       {/* Footer */}
       <footer className="px-6 py-8 md:px-12" style={{ backgroundColor: "#132225" }}>
-        <div className="mx-auto max-w-xl">
+        <div className="mx-auto w-full max-w-xl">
           <p className="text-sm text-white">Find and follow me here</p>
           <div className="mt-3 flex items-center gap-2 text-white">
             <a href="https://instagram.com/talkthegulf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base hover:opacity-80 transition-opacity">
