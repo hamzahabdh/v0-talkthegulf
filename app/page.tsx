@@ -144,7 +144,7 @@ export default function TalkTheGulfLanding() {
                   <p className="mt-1 text-xs text-foreground/60">
                     {guide.description}
                   </p>
-                  <p className="mt-2 text-xs font-medium" style={{ color: "#D4724A" }}>
+                  <p className="mt-2 text-xs font-medium" style={{ color: "#132225" }}>
                     {guide.action} →
                   </p>
                 </div>
@@ -195,8 +195,8 @@ export default function TalkTheGulfLanding() {
       </div>
       
       {/* Footer */}
-      <footer className="px-6 py-8 md:px-12" style={{ backgroundColor: "#132225" }}>
-        <div className="mx-auto w-full max-w-xl">
+      <footer className="py-8" style={{ backgroundColor: "#132225" }}>
+        <div className="mx-auto w-full max-w-xl px-6 md:px-12">
           <p className="text-sm text-white">Find and follow me here</p>
           <div className="mt-3 flex items-center gap-2 text-white">
             <a href="https://instagram.com/talkthegulf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base hover:opacity-80 transition-opacity">
