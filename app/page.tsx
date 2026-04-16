@@ -72,7 +72,7 @@ export default function TalkTheGulfLanding() {
         </nav>
 
         {/* Main Content */}
-        <div className="relative max-w-sm">
+        <div className="relative">
           {/* Hero Sticker - right aligned next to headline */}
           <div 
             className="absolute -right-4 top-0 z-0 md:-right-20"
@@ -147,7 +147,7 @@ export default function TalkTheGulfLanding() {
               <button
                 key={guide.id}
                 onClick={() => setSelectedGuide(guide)}
-                className="group max-w-xs px-3 py-2.5 text-left transition-all hover:opacity-80 shadow-md"
+                className="group w-full px-3 py-2.5 text-left transition-all hover:opacity-80 shadow-md"
                 style={{ backgroundColor: "#F2EDE4" }}
               >
                 <h3 
@@ -165,7 +165,7 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* My Journey */}
-        <div id="story" className="mt-16 max-w-lg">
+        <div id="story" className="mt-16">
           <p className="mb-4 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>My journey</p>
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
@@ -182,7 +182,7 @@ export default function TalkTheGulfLanding() {
         </div>
 
         {/* My Genuine Advice */}
-        <div id="tips" className="mt-12 max-w-lg">
+        <div id="tips" className="mt-12">
           <p className="mb-4 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>Tips</p>
           <ul className="space-y-3 text-sm leading-relaxed text-foreground/85">
             <li className="flex items-start gap-2">
