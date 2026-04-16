@@ -20,7 +20,9 @@ export async function POST(request: NextRequest) {
   )
 
   if (!response.ok) {
-    return NextResponse.json({ error: 'Failed to subscribe' }, { status: 500 })
+    const errorBody = await response.json()
+    console.error('Kit API error:', response.status, JSON.stringify(errorBody))
+    return NextResponse.json({ error: 'Failed to subscribe', details: errorBody }, { status: 500 })
   }
 
   return NextResponse.json({ success: true })
