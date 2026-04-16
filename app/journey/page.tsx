@@ -32,7 +32,7 @@ export default function JourneyPage() {
             talkthegulf
           </Link>
           <div className="text-xs text-muted-foreground">
-            <Link href="/journey" className="hover:text-foreground transition-colors">About Me</Link>
+            <Link href="/journey" className="hover:text-[#132225] transition-colors">About Me</Link>
           </div>
         </nav>
 
@@ -42,7 +42,7 @@ export default function JourneyPage() {
           
           <div className="space-y-6 text-sm leading-relaxed text-foreground/85">
             <p>
-              I started learning Arabic at a young age with a Yemeni teacher. I was forced into Fusha — classical Arabic. Honestly, I barely retained a word. The repeated grammar lessons didn&apos;t help at all.
+              I started learning Arabic at a young age with a Yemeni teacher. I was forced into Fusha - classical Arabic. Honestly, I barely retained a word. The repeated grammar lessons didn&apos;t help at all.
             </p>
             
             <p>
@@ -79,7 +79,7 @@ export default function JourneyPage() {
             
             <p>
               The turning point was dropping Fusha and engaging with dialects first. I thought - let me build the brain structure of a native speaker first, then everything else will sit on top of it naturally. That dropped the anxiety, and I started having fun with it. The science backs this approach to language acquisition.{" "}
-              <a href="https://sdkrashen.com/content/articles/krashen_sla.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#2F7058]">Click here.</a>
+              <a href="https://sdkrashen.com/content/articles/krashen_sla.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#132225]">Click here.</a>
             </p>
             
             <p>
@@ -115,15 +115,15 @@ export default function JourneyPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
                   required
-                  className="w-full border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#2F7058]"
+                  className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#132225]"
                 />
-                <div className="relative p-[2px] animate-wave" style={{
+                <div className="relative rounded-md p-[2px] animate-wave" style={{
                     background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
                     backgroundSize: "200% 100%",
                   }}>
                     <button
                       type="submit"
-                      className="w-full bg-white px-4 py-2.5 text-sm text-foreground transition-all hover:bg-gray-50"
+                      className="w-full rounded-[4px] bg-white px-4 py-2.5 text-sm text-foreground transition-all hover:bg-gray-50"
                     >
                       Subscribe
                     </button>
@@ -135,7 +135,7 @@ export default function JourneyPage() {
                       100% { background-position: 0% 50%; }
                     }
                     .animate-wave {
-                      animation: wave 6s ease-in-out infinite;
+                      animation: wave 12s ease-in-out infinite;
                     }
                   `}</style>
               </form>
@@ -148,7 +148,7 @@ export default function JourneyPage() {
 
           <Link 
             href="/" 
-            className="mt-12 inline-block text-sm underline underline-offset-2 hover:text-[#2F7058]"
+            className="mt-12 inline-block text-sm underline underline-offset-2 hover:text-[#132225]"
           >
             Back to home
           </Link>

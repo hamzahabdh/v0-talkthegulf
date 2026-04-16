@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { X, ArrowRight } from "lucide-react"
+import { X } from "lucide-react"
 
 const guides = [
   {
@@ -62,7 +62,7 @@ export default function TalkTheGulfLanding() {
             talkthegulf
           </p>
           <div className="text-xs text-muted-foreground">
-            <a href="/journey" className="hover:text-foreground transition-colors">About Me</a>
+            <a href="/journey" className="hover:text-[#132225] transition-colors">About Me</a>
           </div>
         </nav>
 
@@ -91,15 +91,15 @@ export default function TalkTheGulfLanding() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
                   required
-                  className="w-full border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#2F7058]"
+                  className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#132225]"
                 />
-                <div className="relative p-[2px] animate-wave" style={{
+                <div className="relative rounded-md p-[2px] animate-wave" style={{
                     background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 25%, #00f7ff 50%, #1c8f65 75%, #00f7ff 100%)",
                     backgroundSize: "200% 100%",
                   }}>
                     <button
                       type="submit"
-                      className="w-full bg-white px-4 py-2.5 text-sm text-foreground transition-all hover:bg-gray-50"
+                      className="w-full rounded-[4px] bg-white px-4 py-2.5 text-sm text-foreground transition-all hover:bg-gray-50"
                     >
                       Subscribe
                     </button>
@@ -111,7 +111,7 @@ export default function TalkTheGulfLanding() {
                       100% { background-position: 0% 50%; }
                     }
                     .animate-wave {
-                      animation: wave 6s ease-in-out infinite;
+                      animation: wave 12s ease-in-out infinite;
                     }
                   `}</style>
               </form>
@@ -125,7 +125,7 @@ export default function TalkTheGulfLanding() {
 
         {/* Resources Section */}
         <div id="guides" className="mt-16">
-          <p className="mb-4 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>Start here — all free</p>
+          <p className="mb-4 text-sm font-bold text-muted-foreground" style={{ fontFamily: "'Hacen Tunisia', sans-serif" }}>Start here</p>
           <div className="flex flex-col gap-3">
             {guides.map((guide) => (
               <button
@@ -148,7 +148,6 @@ export default function TalkTheGulfLanding() {
                     {guide.action} →
                   </p>
                 </div>
-                <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" style={{ color: "#33dca3" }} />
               </button>
             ))}
           </div>
@@ -160,7 +159,7 @@ export default function TalkTheGulfLanding() {
           
           <div className="space-y-4 text-sm leading-relaxed text-foreground/85">
             <p>
-              I started learning Arabic at a young age with a Yemeni teacher. I was forced into Fusha — classical Arabic. Honestly, I barely retained a word. The repeated grammar lessons didn&apos;t help at all.
+              I started learning Arabic at a young age with a Yemeni teacher. I was forced into Fusha - classical Arabic. Honestly, I barely retained a word. The repeated grammar lessons didn&apos;t help at all.
             </p>
             <p>
               I kept thinking: &quot;This is too hard. Why do I keep forgetting? This is impossible.&quot;
@@ -168,7 +167,7 @@ export default function TalkTheGulfLanding() {
             <p>
               So I stopped the moment I had an excuse - my GCSEs.
             </p>
-            <a href="/journey" className="inline-block text-sm underline underline-offset-2 hover:text-[#2F7058]">
+            <a href="/journey" className="inline-block text-sm underline underline-offset-2 hover:text-[#132225]">
               Read the full story
             </a>
           </div>
@@ -218,12 +217,12 @@ export default function TalkTheGulfLanding() {
                     onChange={(e) => setGuideEmail(e.target.value)}
                     placeholder="your@email.com"
                     required
-                    className="w-full border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#2F7058]"
+                    className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-[#132225]"
                   />
                   <button
                     type="submit"
-                    className="w-full px-4 py-2.5 text-sm text-white transition-all hover:opacity-90"
-                    style={{ backgroundColor: "#2F7058" }}
+                    className="w-full rounded-md px-4 py-2.5 text-sm text-white transition-all hover:opacity-90"
+                    style={{ backgroundColor: "#132225" }}
                   >
                     Send me the guide
                   </button>
