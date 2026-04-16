@@ -132,7 +132,7 @@ export default function TalkTheGulfLanding() {
           <div className="flex flex-col gap-3">
             {guides.map((guide) => {
               const cardClass = "group flex w-full items-center justify-between rounded-lg border border-transparent px-4 py-4 text-left transition-all hover:border-border hover:shadow-sm active:scale-[0.99]"
-              const cardStyle = { backgroundColor: "#F2EDE4" }
+              const cardStyle = { backgroundColor: "#eefff6" }
               const cardContent = (
                 <div className="flex-1">
                   <h3

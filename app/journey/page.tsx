@@ -66,11 +66,11 @@ export default function JourneyPage() {
             </p>
             
             <p>
-              <strong>Islam.</strong> Everything was revealed in Arabic. Not ever truly understanding it would feel like a failure to me -a chance at a deeper connection to God that I was leaving on the table.
+              <strong>Islam.</strong>{" "}Everything was revealed in Arabic. Not ever truly understanding it would feel like a failure to me - a chance at a deeper connection to God that I was leaving on the table.
             </p>
             
             <p>
-              <strong>My friends.</strong> Most of them are Arabs. When they&apos;d speak in Arabic I&apos;d be on the sidelines trying to decode what was going on. I&apos;ve always liked a challenge -so one day I wanted to fully understand.
+              <strong>My friends.</strong>{" "}Most of them are Arabs. When they&apos;d speak in Arabic I&apos;d be on the sidelines trying to decode what was going on. I&apos;ve always liked a challenge - so one day I wanted to fully understand.
             </p>
             
             <p>
@@ -87,11 +87,11 @@ export default function JourneyPage() {
             </p>
             
             <p>
-              The lego blocks are in place. Now I&apos;m building in public -so you can too.
+              The lego blocks are in place. Now I&apos;m building in public - so you can too.
             </p>
 
             <p>
-              I want to share what I&apos;ve learnt along the way and more. Including insights from Dr Saddam Alhamoud -a Saudi academic and Arabic language specialist I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies (QIAS) in Liverpool. Real expertise, not just social media advice.
+              I want to share what I&apos;ve learnt along the way and more. Including insights from Dr Saddam Alhamoud - a Saudi academic and Arabic language specialist I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies (QIAS) in Liverpool. Real expertise, not just social media advice.
             </p>
             
             <div className="mt-8">
