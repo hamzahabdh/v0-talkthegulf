@@ -28,9 +28,14 @@ export default function TalkTheGulfLanding() {
   const [guideEmail, setGuideEmail] = useState("")
   const [guideSubmitted, setGuideSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (email) {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      })
       setSubmitted(true)
     }
   }
@@ -38,6 +43,11 @@ export default function TalkTheGulfLanding() {
   const handleGuideSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (guideEmail && selectedGuide) {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: guideEmail }),
+      })
       setGuideSubmitted(true)
     }
   }
