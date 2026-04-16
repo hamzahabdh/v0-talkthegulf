@@ -144,7 +144,7 @@ export default function TalkTheGulfLanding() {
                   <p className="mt-1 text-xs text-foreground/60">
                     {guide.description}
                   </p>
-                  <p className="mt-2 text-xs font-medium" style={{ color: "#33dca3", textShadow: "0 0 10px rgba(51, 220, 163, 0.45)" }}>
+                  <p className="mt-2 text-xs font-medium" style={{ color: "#D4724A" }}>
                     {guide.action} →
                   </p>
                 </div>
