@@ -43,10 +43,10 @@ export default function TwentyFiveGreetingsPage() {
         </nav>
 
         {/* Guide Preview + Form */}
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-8">
 
           {/* Cover Image */}
-          <div className="w-full rounded-xl overflow-hidden shadow-lg">
+          <div className="mx-auto w-48 rounded-xl overflow-hidden shadow-lg">
             <img
               src="/guide-cover.jpg"
               alt="25 Saudi Greetings Guide"
@@ -59,24 +59,21 @@ export default function TwentyFiveGreetingsPage() {
             <h1 className="text-2xl font-bold leading-tight text-foreground md:text-3xl">
               25 Saudi Greetings
             </h1>
-            <p className="mt-2 text-sm text-muted-foreground">A beginner-friendly guide</p>
-
-            <div className="mt-6 space-y-2 text-sm text-foreground/80">
-              <p>- The greeting and the reply — both sides of every conversation</p>
-              <p>- When and how to use each one naturally</p>
-              <p>- The phrases natives actually say — not textbook Arabic</p>
-              <p>- Organised by situation so you can find what you need fast</p>
-            </div>
-
-            <p className="mt-6 text-sm text-foreground/60">
-              Sound natural from day one.
+            <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+              The phrases I wish someone had handed me on day one. Both sides of the conversation - what to say and what comes back.
             </p>
+
+            <div className="mt-4 space-y-1.5 text-sm text-foreground/70">
+              <p>- What natives actually say, not textbook Arabic</p>
+              <p>- The reply to every greeting included</p>
+              <p>- Organised so you can use it straight away</p>
+            </div>
 
             {/* Form */}
             <div className="mt-8">
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="flex w-full flex-col gap-3">
-                  <p className="text-xs text-muted-foreground">Enter your email to get the free guide.</p>
+                  <p className="text-xs text-muted-foreground">Drop your email and I&apos;ll send it over now.</p>
                   <input
                     type="email"
                     value={email}
@@ -110,8 +107,8 @@ export default function TwentyFiveGreetingsPage() {
                 </form>
               ) : (
                 <div>
-                  <p className="text-sm text-foreground">يلا! Check your inbox for the guide.</p>
-                  <p className="mt-2 text-xs text-muted-foreground">Can't find it? Check your spam and move it to your inbox.</p>
+                  <p className="text-sm text-foreground">يلا! Check your inbox.</p>
+                  <p className="mt-2 text-xs text-muted-foreground">Can&apos;t find it? Check spam and move it to your inbox.</p>
                 </div>
               )}
             </div>
