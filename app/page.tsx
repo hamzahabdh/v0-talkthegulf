@@ -10,7 +10,7 @@ const guides = [
     title: "25 Saudi greetings",
     description: "Sound natural from day one.",
     action: "Get it free",
-    href: null,
+    href: "/25-greetings",
   },
   {
     id: "5-things",

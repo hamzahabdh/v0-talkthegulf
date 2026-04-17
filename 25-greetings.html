@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>25 Saudi Greetings - talkthegulf</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0f1e20;
+    font-family: 'Inter', sans-serif;
+    color: white;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 14mm 16mm;
+    background: #0f1e20;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Cover page */
+  .cover {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .cover .brand {
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    background: linear-gradient(90deg, #00f7ff, #1c8f65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+  }
+
+  .cover h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 12px;
+  }
+
+  .cover h1 span {
+    background: linear-gradient(90deg, #00f7ff, #1c8f65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .cover .arabic-title {
+    font-family: 'Amiri', serif;
+    font-size: 36px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 8px;
+    direction: rtl;
+  }
+
+  .cover .subtitle {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 16px;
+    line-height: 1.6;
+    max-width: 260px;
+  }
+
+  .cover .divider {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #00f7ff, #1c8f65);
+    margin: 20px auto;
+  }
+
+  /* Content pages */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10mm;
+    padding-bottom: 4mm;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .category-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #00f7ff;
+    font-weight: 600;
+  }
+
+  .page-brand {
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 1px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6mm;
+    flex: 1;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1.5px solid rgba(0, 247, 255, 0.35);
+    border-radius: 14px;
+    padding: 7mm 8mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .arabic {
+    font-family: 'Amiri', serif;
+    font-size: 30px;
+    font-weight: 700;
+    direction: rtl;
+    line-height: 1.3;
+    color: #ffffff;
+  }
+
+  .transliteration {
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(0, 247, 255, 0.85);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  .usage {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+
+  .card-number {
+    font-size: 9px;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 1px;
+    align-self: flex-start;
+    margin-bottom: 2px;
+  }
+
+  /* Back page */
+  .back {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .back .message {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 280px;
+  }
+
+  .back .arabic-sign {
+    font-family: 'Amiri', serif;
+    font-size: 28px;
+    direction: rtl;
+    color: rgba(255,255,255,0.6);
+    margin-top: 8px;
+  }
+
+  .back .handle {
+    font-size: 13px;
+    color: #00f7ff;
+    margin-top: 16px;
+    letter-spacing: 1px;
+  }
+
+  .back .sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    max-width: 240px;
+    line-height: 1.6;
+  }
+
+  @media print {
+    body { background: #0f1e20; }
+    .page { page-break-after: always; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="page cover">
+  <p class="brand">talkthegulf</p>
+  <div class="divider"></div>
+  <h1><span>25</span> Saudi<br>Greetings</h1>
+  <p class="arabic-title">٢٥ تحية سعودية</p>
+  <p class="subtitle">Sound natural from day one. The phrases every Gulf Arabic learner needs first.</p>
+</div>
+
+<!-- PAGE 2 — Meeting Someone -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">01 — Meeting Someone</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">01</span>
+      <div class="arabic">السلام عليكم</div>
+      <div class="transliteration">As-salamu alaykum</div>
+      <div class="usage">The standard Islamic greeting. Use it everywhere — always safe.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">02</span>
+      <div class="arabic">وعليكم السلام</div>
+      <div class="transliteration">Wa alaykum as-salam</div>
+      <div class="usage">The reply to above. Never skip it.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">03</span>
+      <div class="arabic">هال وللا</div>
+      <div class="transliteration">Hala wallah</div>
+      <div class="usage">Casual, warm hi. What friends say to each other.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3 — Meeting Someone cont. -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">01 — Meeting Someone</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">04</span>
+      <div class="arabic">مرحبا</div>
+      <div class="transliteration">Marhaba</div>
+      <div class="usage">Simple hello. Works in any setting.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">05</span>
+      <div class="arabic">أهلاً وسهلاً</div>
+      <div class="transliteration">Ahlan wa sahlan</div>
+      <div class="usage">Formal welcome. Used when receiving guests.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 4 — Morning & Evening -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">02 — Morning & Evening</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">06</span>
+      <div class="arabic">صباح الخير</div>
+      <div class="transliteration">Sabah al-khair</div>
+      <div class="usage">Good morning.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">07</span>
+      <div class="arabic">صباح النور</div>
+      <div class="transliteration">Sabah al-noor</div>
+      <div class="usage">Reply to good morning — "morning of light."</div>
+    </div>
+    <div class="card">
+      <span class="card-number">08</span>
+      <div class="arabic">يسعد صباحك</div>
+      <div class="transliteration">Yis'ad sabahak</div>
+      <div class="usage">May your morning be happy — warmer version of good morning.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 5 — Morning & Evening cont. -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">02 — Morning & Evening</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">09</span>
+      <div class="arabic">مساء الخير</div>
+      <div class="transliteration">Masa al-khair</div>
+      <div class="usage">Good evening.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">10</span>
+      <div class="arabic">مساء النور</div>
+      <div class="transliteration">Masa al-noor</div>
+      <div class="usage">Reply to good evening — "evening of light."</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 6 — How Are You -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">03 — How Are You</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">11</span>
+      <div class="arabic">كيفك؟</div>
+      <div class="transliteration">Keifak?</div>
+      <div class="usage">How are you? The most common version.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">12</span>
+      <div class="arabic">شخبارك؟</div>
+      <div class="transliteration">Shakhbarak?</div>
+      <div class="usage">How are you? Shorter and more casual.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">13</span>
+      <div class="arabic">إيش الجديد؟</div>
+      <div class="transliteration">Eish al-jadid?</div>
+      <div class="usage">What's new? Use with close friends.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 7 — How Are You cont. -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">03 — How Are You</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">14</span>
+      <div class="arabic">الحمدلله</div>
+      <div class="transliteration">Al-hamdu lillah</div>
+      <div class="usage">Thank God — the go-to reply when asked how you are.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">15</span>
+      <div class="arabic">تمام التمام</div>
+      <div class="transliteration">Tamam al-tamam</div>
+      <div class="usage">Excellent — couldn't be better.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 8 — Thanks & Politeness -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">04 — Thanks & Politeness</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">16</span>
+      <div class="arabic">شكراً</div>
+      <div class="transliteration">Shukran</div>
+      <div class="usage">Thank you. Universal.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">17</span>
+      <div class="arabic">مشكور</div>
+      <div class="transliteration">Mashkur</div>
+      <div class="usage">Thanks (said to a male). More Saudi than shukran.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">18</span>
+      <div class="arabic">الله يعطيك العافية</div>
+      <div class="transliteration">Allah yatik al-afiya</div>
+      <div class="usage">May God grant you wellness — said after someone helps you.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 9 — Thanks & Politeness cont. -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">04 — Thanks & Politeness</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">19</span>
+      <div class="arabic">الله يسلمك</div>
+      <div class="transliteration">Allah yisallimak</div>
+      <div class="usage">May God protect you — warm sign-off.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">20</span>
+      <div class="arabic">معليش</div>
+      <div class="transliteration">Ma'lesh</div>
+      <div class="usage">It's okay / no worries. One of the most used words in Gulf Arabic.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 10 — Welcoming & Farewells -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">05 — Welcoming & Farewells</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">21</span>
+      <div class="arabic">نورت</div>
+      <div class="transliteration">Nawwart</div>
+      <div class="usage">You've lit up the place — said when someone arrives.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">22</span>
+      <div class="arabic">حياك الله</div>
+      <div class="transliteration">Hayyak Allah</div>
+      <div class="usage">May God welcome you — warm greeting when someone enters.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">23</span>
+      <div class="arabic">تصبح على خير</div>
+      <div class="transliteration">Tisbah ala khair</div>
+      <div class="usage">Good night — literally "wake up to goodness."</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 11 — Welcoming & Farewells cont. -->
+<div class="page">
+  <div class="page-header">
+    <span class="category-label">05 — Welcoming & Farewells</span>
+    <span class="page-brand">talkthegulf</span>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <span class="card-number">24</span>
+      <div class="arabic">وانت بخير</div>
+      <div class="transliteration">Wa inta bikhair</div>
+      <div class="usage">And you too — the reply to good night.</div>
+    </div>
+    <div class="card">
+      <span class="card-number">25</span>
+      <div class="arabic">أشوفك مرة جاي</div>
+      <div class="transliteration">Ashoofak marra jay</div>
+      <div class="usage">See you next time — your sign-off.</div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK PAGE -->
+<div class="page back">
+  <p class="message">Now go use one of these today.</p>
+  <p class="arabic-sign">أشوفك مرة جاي</p>
+  <p class="handle">@talkthegulf</p>
+  <p class="sub">Follow for weekly Gulf Arabic phrases, cultural context, and the Saudi dialect explained plainly.</p>
+</div>
+
+</body>
+</html>
