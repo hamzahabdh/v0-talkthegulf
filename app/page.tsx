@@ -82,15 +82,14 @@ export default function TalkTheGulfLanding() {
         {/* Hero Section */}
         <div>
           <h1 className="mb-3 text-2xl font-bold leading-tight text-foreground md:text-3xl">
-            The Gulf Arabic resource I wished existed.{" "}
-            <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>Now it does.</span>
+            Learn Gulf Arabic in a way that actually <span style={{ backgroundColor: "#E9E3D7", padding: "0 4px" }}>helps you speak it.</span>
           </h1>
           <p className="mb-4 text-xs text-muted-foreground">Ahlan / <span dir="rtl">أهلاً</span> (means welcome)</p>
           <p className="text-sm leading-relaxed text-foreground">
             You want to learn Arabic in a way that feels natural, useful, and real. I get that. I sat through the same boring grammar lessons. Methods that didn&apos;t stick. Until I changed my approach.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-foreground">
-            What I&apos;m building here is what I wish had existed - Gulf Arabic phrases with real cultural context, the Saudi dialect explained plainly, no grammar tables. For learners, by a learner.
+            Think of me as that accountability partner in your corner - sharing weekly insights from my own journey, real phrases natives actually use, and the cultural context that makes it click. Someone who keeps you in the orbit of the language, even when you lose interest, or feel like giving up on it altogether.
           </p>
 
           {/* CTA */}
