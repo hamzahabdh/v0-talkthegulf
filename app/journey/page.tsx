@@ -75,7 +75,7 @@ export default function JourneyPage() {
             </p>
 
             <p>
-              Around the same time I was running a cafe called Thoughtfully. Most of my regulars were Khaleeji. One of my staff only spoke Kuwaiti Arabic. I had no choice but to pick things up. And that forced, situational learning taught me more than any classroom had. Context beats curriculum every time.
+              Around that time I had a cafe. Most of my regulars were Khaleeji. One of my staff only spoke the Kuwaiti dialect. I had no choice but to pick things up. That forced, situational learning taught me more than any classroom ever did.
             </p>
 
             <p>
@@ -88,7 +88,7 @@ export default function JourneyPage() {
             </p>
 
             <p>
-              I want to share what I have learnt along the way. Including insights from Dr Saddam Alhamoud, an Arabic language specialist who taught at the King Abdul Aziz Institute in Saudi Arabia, who I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies in Liverpool. Real expertise behind what I share, not just social media advice.
+              I want to share what I have learnt along the way. Including insights from Dr Saddam Alhamoud, an Arabic language specialist who taught at the King Abdul Aziz Institute in Saudi Arabia, who I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies in Liverpool.
             </p>
 
             <p>
@@ -96,12 +96,11 @@ export default function JourneyPage() {
             </p>
 
             <div className="mt-8">
-              <p className="text-right text-lg font-medium text-foreground" dir="rtl">
+              <p className="text-lg font-medium text-foreground" dir="rtl">
                 في أمان الله
               </p>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Fi aman Allah (go in God&apos;s protection)
-              </p>
+              <p className="mt-1 text-sm text-foreground">Fi aman Allah &nbsp;&mdash;&nbsp; <em>In God&apos;s Protection</em></p>
+              <p className="mt-1 text-xs text-muted-foreground">The warmest way to say goodbye in Saudi Arabic.</p>
             </div>
 
             <p className="mt-4 text-sm font-medium text-foreground">
