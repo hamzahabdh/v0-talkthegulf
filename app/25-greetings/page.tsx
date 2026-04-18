@@ -60,14 +60,8 @@ export default function TwentyFiveGreetingsPage() {
               25 Saudi Greetings
             </h1>
             <p className="mt-3 text-sm leading-relaxed text-foreground/80">
-              The phrases I wish someone had handed me on day one. Both sides of the conversation - what to say and what comes back.
+              Both sides of every greeting. What to say, and what comes back. So you are never caught off guard when someone responds.
             </p>
-
-            <div className="mt-4 space-y-1.5 text-sm text-foreground/70">
-              <p>- What natives actually say, not textbook Arabic</p>
-              <p>- The reply to every greeting included</p>
-              <p>- Organised so you can use it straight away</p>
-            </div>
 
             {/* Form */}
             <div className="mt-8">
