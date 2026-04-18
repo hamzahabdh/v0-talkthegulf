@@ -68,7 +68,12 @@ export default function FiveThingsPage() {
             <div key={thing.number} className="flex gap-5">
               <div
                 className="mt-0.5 text-xs font-bold shrink-0 w-6"
-                style={{ color: "#132225" }}
+                style={{
+                  background: "linear-gradient(90deg, #00f7ff 0%, #1c8f65 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                }}
               >
                 {thing.number}
               </div>
