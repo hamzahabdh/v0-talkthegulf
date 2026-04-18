@@ -3,28 +3,28 @@ import Link from "next/link"
 const things = [
   {
     number: "01",
-    title: "Start with dialect, not Fusha",
-    body: "Everyone told me to learn Fusha first. Classical Arabic. The \"proper\" way. It made me anxious, bored, and I retained nothing. The shift that changed everything was dropping it entirely and going straight into Saudi dialect. Build the brain structure of a native speaker first - someone who grew up hearing Arabic before they ever studied it. Fusha makes sense later. It didn't make sense at the start.",
+    title: "Start with dialect, not Fusha or MSA",
+    body: "This is preference. But hear me out. Nobody communicates in Fusha or MSA day to day. Nobody. When I tried to learn it I had no motivation because I could not picture myself using it in a real conversation. It was boring. I retained nothing. Start with dialect. Build the brain structure of a native speaker first. Once you reach a decent level you can pick up MSA or Fusha on top of it. Or at the same time. But not before.",
   },
   {
     number: "02",
     title: "Find your why before anything else",
-    body: "I wasted years trying to learn Arabic without a real reason. When I actually sat down and got honest - Islam, my friends, wanting to belong in conversations - everything became easier. The motivation was there when things got hard. Write yours down. Be specific. \"I want to learn Arabic\" isn't a why. \"I want to understand what my grandfather says\" is.",
+    body: "It sounds cliche but it is the only thing that will keep you going. I spent years trying to learn Arabic without a real reason. My parents forced me. When I got honest with myself about why I actually wanted to learn, things shifted. Islam. My friends. Wanting to belong in conversations. The motivation showed up when things got hard. Write yours down. Be specific. \"I want to learn Arabic\" is not a why. \"I want to understand what my grandfather says\" is.",
   },
   {
     number: "03",
-    title: "Immersion first, studying second",
-    body: "I used to think I needed to study Arabic before I could enjoy it. Wrong. Watch the shows. Scroll the Arabic reels. Listen to the music even when you don't understand it. Your brain is picking up rhythm, sounds, and patterns whether you realise it or not. The studying becomes a way to attach meaning to things you've already heard - not the other way around.",
+    title: "Immerse yourself in the Arabic culture",
+    body: "I used to think I needed to study first. Wrong. Watch the shows with subtitles. Scroll the Arabic reels. Listen to the music even when you do not understand a word. Your brain picks up rhythm, sounds and patterns whether you realise it or not. Studying becomes a way to attach meaning to things you have already heard. Not the other way around.",
   },
   {
     number: "04",
     title: "Drop the grammar tables",
-    body: "Grammar tables killed my enthusiasm every single time. I'm not saying grammar doesn't matter - it does, eventually. But leading with it is like teaching someone the rules of football before they've ever kicked a ball. Get the phrases in first. Get comfortable. The grammar starts to reveal itself naturally when you're already inside the language.",
+    body: "Grammar tables killed my enthusiasm every single time. Grammar matters eventually. But leading with it is like teaching someone the rules of football before they have ever kicked a ball. Get the phrases in first. Get comfortable. The grammar reveals itself naturally once you are inside the language.",
   },
   {
     number: "05",
-    title: "Lower the stakes and have fun with it",
-    body: "The biggest block for me wasn't ability - it was anxiety. Worrying about making mistakes, saying something wrong, sounding stupid. The science actually backs this up - Stephen Krashen calls it the affective filter. When you're stressed, your brain closes off to new language input. When you're relaxed and enjoying yourself, it absorbs. Mistakes are the method. Make more of them.",
+    title: "Have fun with it",
+    body: "The biggest block was not ability. It was anxiety. Worrying about mistakes, saying something wrong, sounding stupid. Stephen Krashen calls it the affective filter. When you are stressed your brain closes off to new input. When you are relaxed it absorbs. Mistakes are the method. Make more of them.",
   },
 ]
 
