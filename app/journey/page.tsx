@@ -47,64 +47,60 @@ export default function JourneyPage() {
           
           <div className="space-y-6 text-sm leading-relaxed text-foreground/85">
             <p>
-              I started learning Arabic at a young age with a Yemeni teacher. I was forced into Fusha - classical Arabic. Honestly, I barely retained a word. The repeated grammar lessons didn&apos;t help at all.
-            </p>
-            
-            <p>
-              I kept thinking: &quot;This is too hard. Why do I keep forgetting? This is impossible.&quot;
-            </p>
-            
-            <p>
-              So I stopped the moment I had an excuse - my GCSEs.
-            </p>
-            
-            <p>
-              Then Covid. I had time. So I booked a Royal Jordanian to Jordan that summer. Alone.
-            </p>
-            
-            <p>
-              I arrived with enthusiasm. But once again - grammar lessons. And it was making me sleepy (I&apos;d literally nap on my breaks during teaching). I left Jordan after a month with probably a few words.
-            </p>
-            
-            <p>
-              But when I came back, something shifted. I found my reasons why.
-            </p>
-            
-            <p>
-              <strong>Islam.</strong>{" "}Everything was revealed in Arabic. Not ever truly understanding it would feel like a failure to me - a chance at a deeper connection to God that I was leaving on the table.
-            </p>
-            
-            <p>
-              <strong>My friends.</strong>{" "}Most of them are Arabs. When they&apos;d speak in Arabic I&apos;d be on the sidelines trying to decode what was going on. I&apos;ve always liked a challenge - so one day I wanted to fully understand.
-            </p>
-            
-            <p>
-              So I set a lifelong goal: absorb as much Arabic as possible, wherever I am. Arabic series, social media, conversations with friends - actively listening, actively learning. I still do all of those things today.
-            </p>
-            
-            <p>
-              The turning point was dropping Fusha and engaging with dialects first. I thought - let me build the brain structure of a native speaker first, then everything else will sit on top of it naturally. That dropped the anxiety, and I started having fun with it. The science backs this approach to language acquisition.{" "}
-              <a href="https://sdkrashen.com/content/articles/krashen_sla.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#132225]">Click here.</a>
-            </p>
-            
-            <p>
-              I&apos;m now at a level where I comfortably understand most conversations. Being in the Middle East and hearing Arabic no longer feels like noise - it makes sense.
-            </p>
-            
-            <p>
-              The lego blocks are in place. Now I&apos;m building in public - so you can too.
+              I started learning Arabic young. A Yemeni teacher, Fusha lessons, grammar tables. I retained almost nothing. The lessons were boring and I had no real reason to keep going.
             </p>
 
             <p>
-              I want to share what I&apos;ve learnt along the way and more. Including insights from Dr Saddam Alhamoud - a Saudi academic and Arabic language specialist I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies (QIAS) in Liverpool. Real expertise, not just social media advice.
+              So I stopped the moment I had an excuse. My GCSEs.
             </p>
-            
+
+            <p>
+              Then Covid hit. I had time. I booked a Royal Jordanian to Jordan that summer. Alone. Thought a month of classes would fix everything.
+            </p>
+
+            <p>
+              Same story. Grammar lessons. I was literally napping on my breaks. I left Jordan after a month with a few words and not much else.
+            </p>
+
+            <p>
+              But something shifted when I got back. I stopped trying to learn Arabic and started asking why I actually wanted to.
+            </p>
+
+            <p>
+              <strong>Islam.</strong>{" "}Everything was revealed in Arabic. Leaving that on the table felt like leaving a deeper connection to God on the table too.
+            </p>
+
+            <p>
+              <strong>My friends.</strong>{" "}Most of them are Arab. When they spoke in Arabic I was on the sidelines. I wanted in.
+            </p>
+
+            <p>
+              Around the same time I was running a cafe called Thoughtfully. Most of my regulars were Khaleeji. One of my staff only spoke Kuwaiti Arabic. I had no choice but to pick things up. And that forced, situational learning taught me more than any classroom had. Context beats curriculum every time.
+            </p>
+
+            <p>
+              The real turning point was dropping Fusha altogether and going straight into dialect. I wanted to build the brain structure of a native speaker first. That dropped the anxiety. I started enjoying it. The science backs this up.{" "}
+              <a href="https://sdkrashen.com/content/articles/krashen_sla.pdf" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#132225]">Read Krashen.</a>
+            </p>
+
+            <p>
+              Today I understand most conversations comfortably. Arabic in the Middle East no longer sounds like noise. It makes sense.
+            </p>
+
+            <p>
+              I want to share what I have learnt along the way. Including insights from Dr Saddam Alhamoud, an Arabic language specialist who taught at the King Abdul Aziz Institute in Saudi Arabia, who I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies in Liverpool. Real expertise behind what I share, not just social media advice.
+            </p>
+
+            <p>
+              That is what talkthegulf is. Sharing the insights and resources I wish I had.
+            </p>
+
             <div className="mt-8">
               <p className="text-right text-lg font-medium text-foreground" dir="rtl">
-                أشوفكم مرة جاي
+                في أمان الله
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Ahshufkum marra jaay (see you next time)
+                Fi aman Allah (go in God&apos;s protection)
               </p>
             </div>
 
