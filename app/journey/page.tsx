@@ -62,6 +62,18 @@ export default function JourneyPage() {
               Same story. Grammar lessons. I was literally napping on my breaks. I left Jordan after a month with a few words and not much else.
             </p>
 
+            {/* Jordan photo */}
+            <div className="my-2">
+              <img
+                src="/jordan-2021.jpg"
+                alt="Jordan, 2021 — Bahr al Mayt, the Dead Sea"
+                className="w-full rounded-lg object-cover"
+              />
+              <p className="mt-2 text-xs text-muted-foreground">
+                Jordan, 2021. Bahr al Mayt — the Dead Sea. My teacher (far left), a friend who came to visit sitting next to him, and some Syrian orphans we took out for the day.
+              </p>
+            </div>
+
             <p>
               But something shifted when I got back. I stopped trying to learn Arabic and started asking why I actually wanted to.
             </p>
@@ -75,7 +87,7 @@ export default function JourneyPage() {
             </p>
 
             <p>
-              Around that time I had a cafe. Most of my regulars were Khaleeji. One of my staff only spoke the Kuwaiti dialect. I had no choice but to pick things up. That forced, situational learning taught me more than any classroom ever did.
+              In 2023 I had a cafe. Most of my regulars were Khaleeji. I picked up a lot of culture and language just from being around them. One of my staff only spoke in the Kuwaiti dialect. I had no choice but to pick things up. That forced, situational learning taught me more than any classroom ever did.
             </p>
 
             <p>
@@ -88,11 +100,11 @@ export default function JourneyPage() {
             </p>
 
             <p>
-              I want to share what I have learnt along the way. Including insights from Dr Saddam Alhamoud, an Arabic language specialist who taught at the King Abdul Aziz Institute in Saudi Arabia, who I worked with to build the Arabic language programme at the Quilliam Institute for Arabic Studies in Liverpool.
+              I want to share what I have learnt along the way. One of the people I learnt most from is Dr Saddam Alhamoud, an Arabic language specialist from Saudi Arabia. We worked together building the Arabic language programme at the Quilliam Institute for Arabic Studies in Liverpool. His insights are woven through everything here.
             </p>
 
             <p>
-              That is what talkthegulf is. Sharing the insights and resources I wish I had.
+              That is what talkthegulf is. Everything I wish existed when I started.
             </p>
 
             <div className="mt-8">
