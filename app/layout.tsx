@@ -3,9 +3,23 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'TalkTheGulf — Learn Gulf Arabic',
-  description: 'Learn Gulf Arabic the fun way. Dialect first, fusha later. Join the journey.',
+  title: 'talkthegulf — Learn Gulf Arabic',
+  description: 'Real Gulf Arabic for real conversations. Phrases, culture, and insights from someone who learned the hard way. Dialect first.',
   generator: 'v0.app',
+  metadataBase: new URL('https://talkthegulf.com'),
+  openGraph: {
+    title: 'talkthegulf — Learn Gulf Arabic',
+    description: 'Real Gulf Arabic for real conversations. Phrases, culture, and insights from someone who learned the hard way.',
+    url: 'https://talkthegulf.com',
+    siteName: 'talkthegulf',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'talkthegulf — Learn Gulf Arabic',
+    description: 'Real Gulf Arabic for real conversations. Dialect first.',
+  },
   icons: {
     icon: [
       {
