@@ -129,7 +129,7 @@ export default function TalkTheGulfLanding() {
               </form>
             ) : (
               <p className="text-sm text-foreground">
-                مرحبا! You&apos;re in. Check your inbox.
+                You&apos;re in. Check your inbox — spam folder too.
               </p>
             )}
           </div>

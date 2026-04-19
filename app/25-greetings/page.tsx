@@ -46,7 +46,7 @@ export default function TwentyFiveGreetingsPage() {
         <div className="flex flex-col gap-8">
 
           {/* Cover Image */}
-          <div className="mx-auto w-48 rounded-xl overflow-hidden shadow-lg">
+          <div className="w-full rounded-xl overflow-hidden shadow-lg">
             <img
               src="/guide-cover.jpg"
               alt="25 Saudi Greetings Guide"
@@ -101,8 +101,7 @@ export default function TwentyFiveGreetingsPage() {
                 </form>
               ) : (
                 <div>
-                  <p className="text-sm text-foreground">يلا! Check your inbox.</p>
-                  <p className="mt-2 text-xs text-muted-foreground">Can&apos;t find it? Check spam and move it to your inbox.</p>
+                  <p className="text-sm text-foreground">You&apos;re in. Check your inbox — spam folder too.</p>
                 </div>
               )}
             </div>
