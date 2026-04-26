@@ -89,7 +89,7 @@ export default function TalkTheGulfLanding() {
             You want to learn Arabic in a way that feels natural, useful, and real. I get that. I sat through the same boring grammar lessons. Methods that didn&apos;t stick. Until I changed my approach.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-foreground">
-            Think of me as that accountability partner in your corner - sharing weekly insights from my own journey, real phrases natives actually use, and the cultural context that makes it click. Someone who keeps you in the orbit of the language, even when you lose interest, or feel like giving up on it altogether.
+            Think of me as that accountability partner in your corner - sharing insights from my own journey, real phrases natives actually use, and the cultural context that makes it click. Someone who keeps you in the orbit of the language, even when you lose interest, or feel like giving up on it altogether.
           </p>
 
           {/* CTA */}
