@@ -97,7 +97,6 @@ export default function TwentyFiveGreetingsPage() {
                       animation: wave 12s ease-in-out infinite;
                     }
                   `}</style>
-                  <p className="text-xs text-muted-foreground">Free for now, but not forever.</p>
                 </form>
               ) : (
                 <div>
